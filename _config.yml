@@ -1,2 +1,4 @@
 name: Your New Jekyll Site
 pygments: true
+url: http://wavesofchange.github.io/woc-jekyll/
+baseurl: /woc-jekyll
