@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Waves of Change Summer Internship Program"
 date:   2013-07-17 10:44:50
 categories: jekyll update
 ---
