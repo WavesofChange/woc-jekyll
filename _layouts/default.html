@@ -17,11 +17,24 @@
 
         <div class="container">
           <div class="site">
-            <div class="header">
+            <header class="header">
               <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+              
+              <Ul>
+
+                <li><a href="{{ site.baseurl}}/index.html"> Home </a> </li>
+                <li> <a href="{{ site.baseurl}}/projects/index.html"> Projects </a> </li>
+                <li> <a href="{{ site.baseurl}}/blog/index.html"> Blog </a> </li>
+                <li> <a href="{{ site.baseurl}}/events/index.html"> Events </a> </li>
+                <li> <a href="{{ site.baseurl}}/gallery/index.html"> Gallery </a> </li>
+                <li> <a href="{{ site.baseurl}}/about/index.html"> About Us </a> </li> 
+
+              </Ul>
+            </header>
 
                 {{ content }}
 
            
+ </body> 
+
+     </html> 
