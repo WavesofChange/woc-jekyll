@@ -18,11 +18,14 @@
         <div class="container">
           <div class="site">
             <header class="header">
+
+             <!-- <img src = "{{ site.baseurl}}/images/logo.img" width = "150px" height = "60px"> -->
+
               <h1 class="title"><a href="/">{{ site.name }}</a></h1>
               
-              <Ul>
+              <Ul class="nav">
 
-                <li><a href="{{ site.baseurl}}/index.html"> Home </a> </li>
+                <li> <a href="{{ site.baseurl}}/index.html"> Home </a> </li>
                 <li> <a href="{{ site.baseurl}}/projects/index.html"> Projects </a> </li>
                 <li> <a href="{{ site.baseurl}}/blog/index.html"> Blog </a> </li>
                 <li> <a href="{{ site.baseurl}}/events/index.html"> Events </a> </li>
@@ -32,9 +35,9 @@
               </Ul>
             </header>
 
+            <main>
                 {{ content }}
-
-           
- </body> 
-
-     </html> 
+            </main>    
+                       
+    </body> 
+</html> 

@@ -1,0 +1,59 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+
+body {
+  background-color: #fefefe;
+  font-family:  'Quattrocento Sans', sans-serif;
+  margin: auto 40px 30px 40px;
+
+}
+ 
+/*****************************************************************************/
+/*
+/* Basic Styles 
+/*
+/*****************************************************************************/
+
+.photo-left {
+  float: left;
+  padding: 0px 10px;
+}
+
+.photo-right {
+  float: right;
+  padding: 0px 10px;
+}
+
+.photo-center {
+ display: block;
+ margin: 0 auto;
+}
+
+.text-left {
+  text-align: left; 
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
