@@ -1,13 +1,20 @@
 ---
   layout: default
   title: Waves of Change
+  class: projects
 ---
 
-   <div id="home">
-    <h1>Blog Posts</h1>
-    <ul class="posts">
-      {% for post in site.projects %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }} </a></li>
-      {% endfor %}
-    </ul>
-  </div>
+<h1>Projets</h1>
+
+<div class="project">
+  <h2><a href="{{ site.baseurl }}/projects/project-yeah.html">Project Yeah</a></h2>
+  <img href="" >
+  <p>Young Empowered Artists of Harlem, or Y.E.A.H., located on 126th Street, aims to bring 15 teenagers each from Grant Houses and Manhattanville Houses together for work on a visual arts initiative, which Roy Secord, who runs the nonprofit, described as a large anti-violence mural.</p> 
+  <p>Waves of Change is documenting the project. We're producing a stop-motion video of the transformation of the space as the students build a mural. We're also interviewing the partipants</p>
+</div>
+
+<div class="project">
+  <h2><a href="{{ site.baseurl }}/projects/ps-186.html">PS 186</a></h2>
+  <img src="https://trello-attachments.s3.amazonaws.com/51d8ec4c1cc7870f4e003b9d/51ed6b0257de54314f0053c0/889dad3b089bf899fe66f02149abc8c9/CAM00096.jpg" height="350px">
+  <p>Waves of Change investigated the mystery behind the empty school</p>
+</div>
