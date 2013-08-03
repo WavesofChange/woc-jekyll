@@ -1,6 +1,7 @@
 ---
   layout: default
   title: Waves of Change
+  author: Raelene Holmes
 ---
 
 <h1>Raelene Holmes-Andrews</h1>
@@ -16,3 +17,24 @@
 
 
 	</Ul>
+
+<aside>
+  <div>
+    <h2>Blog Posts by Raelene</h2>
+    <ul class="posts">
+      {% for post in site.posts %}
+        {% if post.author == "Raelene Holmes" %}
+          <li>
+            <h3 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h3>
+            <p><span class="date">{{ post.date | date_to_string }}</span></p>
+          </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>  
+
+  <div>
+    <h2>Projects by Raelene</h2>
+    <!-- @TOOD Add a list of your projects. Each time you do a new project, you should add it here -->
+  </div>  
+</aside>
