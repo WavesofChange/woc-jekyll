@@ -3,42 +3,18 @@
   title: Waves of Change 
 ---
 
-<div class="content">
-	<a href="{{ site.baseurl}}/styleguide/index.html"> 
-		<img class="blog-center" src="{{ site.baseurl}}/images/flicker-words.jpg" width="200px">
-	</a>
+<h1>Blog Posts</h1>
 
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, mauris vitae ultricies sollicitudin, magna metus varius ligula, vestibulum pulvinar leo arcu at odio. Quisque eu tellus at mi tristique dignissim at id arcu. Suspendisse semper mi at eros semper, a pharetra nisl elementum. Fusce vel purus luctus, eleifend dolor in, adipiscing justo. Phasellus ac massa eget nisi fermentum varius sit amet et erat. Morbi dignissim iaculis odio, in scelerisque quam vestibulum et. Praesent vulputate orci cursus eleifend fringilla. Morbi et fringilla nibh, viverra viverra quam.
-	</p>
-	<p>
-		Sed in lacus ut sapien imperdiet faucibus quis sed erat. Vestibulum scelerisque vel dolor suscipit varius. Nunc sed suscipit dolor. Integer imperdiet nisl diam, sed imperdiet lorem ultricies non. Donec auctor diam sed ligula pulvinar, a ultricies metus pretium. Nulla eget diam nec sem fermentum ultrices in quis lacus. Duis sed arcu bibendum, vulputate nulla vel, tincidunt eros. Pellentesque adipiscing quam quis commodo consequat. Integer in nisl placerat, tincidunt nisi non, faucibus leo. Integer dolor metus, congue sed elit vitae, sodales consequat dolor. Fusce at bibendum sapien. Ut eu erat et nibh pretium viverra sit amet ac arcu.
-	</p>
-	<p>
-		Sed facilisis enim ac nisi dictum sodales. Vestibulum consectetur, lorem vitae rhoncus consectetur, leo augue tempor massa, vel dapibus nisi velit et nisi. Integer non augue nunc. Proin aliquam eros sed magna blandit, id dictum velit aliquet. Sed malesuada ligula eget erat gravida cursus. Mauris nec nibh accumsan, convallis arcu ut, eleifend ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sodales tempus metus, eu rhoncus tortor scelerisque eget. Maecenas quis consectetur tortor. Duis convallis vel nisi imperdiet pharetra. Proin viverra urna vulputate, gravida mi vitae, mattis velit. In hac habitasse platea dictumst. Vivamus lacinia ornare scelerisque. Duis at elit sit amet elit egestas mollis.
-	</p>
-</div>
-
-		
-{% include aside.html %}
-		<img src="{{ site.baseurl}}/images/flickr-small.jpg">
-
-		<p>
-			Duis convallis vel nisi imperdiet pharetra. Proin viverra urna vulputate, gravida mi vitae, mattis velit. In hac habitasse platea dictumst. Vivamus lacinia ornare scelerisque. Duis at elit sit amet elit egestas mollis.
-		</p>
-
-		<img src="{{ site.baseurl}}/images/flickr-small.jpg">
-
-		<p>
-			Duis convallis vel nisi imperdiet pharetra. Proin viverra urna vulputate, gravida mi vitae, mattis velit. In hac habitasse platea dictumst. Vivamus lacinia ornare scelerisque. Duis at elit sit amet elit egestas mollis.
-		</p>
-
-		<img src="{{ site.baseurl}}/images/flickr-small.jpg">
-
-		<p>
-			Duis convallis vel nisi imperdiet pharetra. Proin viverra urna vulputate, gravida mi vitae, mattis velit. In hac habitasse platea dictumst. Vivamus lacinia ornare scelerisque. Duis at elit sit amet elit egestas mollis.
-		</p>
-	</div>
-</aside>
-
+<ul class="posts">
+  {% for post in site.posts %}
+    <li>
+      <h2 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h2>
+      <p>
+        <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p> 
+    </li>
+  {% endfor %}
+</ul>
 

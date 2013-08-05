@@ -1,23 +1,45 @@
 ---
   layout: default
   title: Waves of Change
+  author: Nefretiry Philippe
 ---
 
-<h1>Nafretiry “Nefy” Philippe</h1>
+<section class="content">
+  <h1>Nafretiry “Nefy” Philippe</h1>
 
-<img src="{{ site.baseurl}}/images/nefysphoto.jpg" width="500px" height="400px">
-    
-
-  <p>My name is Nafretiry Philippe I attend Mott Hall High School; I will be going to the eleventh grade In September of 2013. When I grow up I aspire to be a lawyer, psychiatrist or journalist. A short-term goal of mine is to graduate high school and have an advanced regent’s diploma. A few long-term goals I have are to get in to either Stony brook, Syracuse or a college that is away from home but not too far. Also another long-term goal is to pass my bar exam and get into law school. My hobbies are writing and exercising I like to walk and run around. My activities including extracurricular are attending the <a href="http://www.heaf.org/"> Heaf (Harlem education activities fund)</a> program afterschool and also attending the <a href="http://www.urbanscholarsny.org/">Urban Scholars </a> program for tutoring and sometimes summer programs. In addition, I do a lot of activities with my church such as praise dance and singing with the choir and some volunteer work.</p>
+  <img src="{{ site.baseurl}}/images/nefysphoto.jpg" width="500px" height="400px">
+      
+ <p>My name is Nafretiry Philippe; and I currently attend Mott Hall High School. This fall, I will enter the 11th grade. I plan to graduate high school with an advanced regents diploma. A long-term goal I have of mine is to pass my bar and attend law school. I plan to attend either stony brook or syracuse University; i want to go away but not too far. My hobbies are writing and exercising I like to walk and run around. My activities including extracurricular are attending the <a href="http://www.heaf.org/"> Heaf (Harlem education activities fund)</a> program afterschool and also attending the <a href="http://www.urbanscholarsny.org/">Urban Scholars </a> program for tutoring and sometimes summer programs. In addition, I do a lot of activities with my church such as praise dance and singing with the choir and some volunteer work.</p>
 
   <p>I have a few favorites but not too many, my favorite food is macaroni and cheese, my favorite subject in school is English, my favorite color is purple, my favorite movies are my sisters keeper, freedom writers, and the great Gatsby, My favorite places are Disney world, Haiti, the Bahamas and France. My parents were born in port au prince, Haiti, My Father was raised partly in Haiti and partly in the Dominican republic, My mom was born and raised in Haiti and the she came to the USA, My parents speak Haitian Creole, French  and my father speaks Spanish, I speak Creole a little Spanish and English and I am learning French at home. A fun fact about me is that I have a large family and they are spread across the world from Japan, to china, to Miami, to France, to D.r, to Haiti etc. What most excites me about the waves of change internship program is the journalism because I love to write and it’s amazing how I will be able to inform others based on my writing. What wakes me up in the morning is God my family and I are Christians and I think if I get to see another day I thank god. What motivates me is seeing how a lot of women have had to fight in history to get a word out to  get a voice in a way and I think if they could do it why can’t I. What makes me proud of myself is when I accomplish things I never think I could and I do not only just doing it I do it with all my effort and it ends up being great which puts a smile on my face.</p>
 
-  
-<h3>connect</h3>
-<ul>
-<li>tumblr:wasveofchange.tumblr.com</li>
-<li>twitter@waveschange</li>
+
+  <h3>connect</h3>
+  <ul>
+  <li>tumblr:wasveofchange.tumblr.com</li>
+  <li>twitter@waveschange</li>
+  </ul>
+</section>
 
 
+<aside>
+  <div>
+    <h2>Blog Posts by Nefy</h2>
+    <ul class="posts">
+      {% for post in site.posts %}
+        {% if post.author == "Nafretiry Philippe" %}
+          <li>
+            <h3 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h3>
+            <p><span class="date">{{ post.date | date_to_string }}</span></p>
+          </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>  
 
-</ul>
+  <div>
+    <h2>Projects by Nefy</h2>
+    <!-- @TOOD Add a list of your projects. Each time you do a new project, you should add it here -->
+  </div>  
+</aside>
+

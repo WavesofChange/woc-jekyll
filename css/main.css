@@ -17,9 +17,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px 'Lato', Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  font: 13.34px 'Lato', "HelveticaNeue", "Lucida Grande", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { margin-bottom: 1em; }
+
 p { margin: 1em 0; }
 
 a         { color: #00a; }
@@ -39,9 +38,21 @@ table {
   font: 100%;
 }
 
-/*main {
-  padding: 20px 0px;
-}*/
+ul, ol {
+  list-style-type: none;
+}
+
+
+/*****************************************************************************/
+/*
+/* Post
+/*
+/*****************************************************************************/
+.title {
+  margin-bottom: 0;
+  
+}
+
 
 /*****************************************************************************/
 /*
@@ -49,20 +60,19 @@ table {
 /*
 /*****************************************************************************/
 
-ul.posts {
-  list-style-type: none;
+.posts {
   margin-bottom: 2em;
 }
 
-ul.posts li {
+.posts li {
   line-height: 1.75em;
 }
 
-ul.posts span {
+.posts span {
   color: #aaa;
-  font-family: 'Lato';
   font-size: 80%;
 }
+
 
 .nav {
   list-style-type: none;
@@ -76,75 +86,10 @@ ul.posts span {
 
 /*****************************************************************************/
 /*
-/* Site
+/* Layout
 /*
 /*****************************************************************************/
 
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 96%;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h1.title a {
-  color: #a00;
-}
-
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
-}
-
-.site .footer .rss {  
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.site .footer .rss img {
-  border: 0;
-}
 
 .content {
   width: 60%;
@@ -155,6 +100,18 @@ ul.posts span {
 .about .content {
   width: 100%;
 }
+
+aside {
+  width: 30%;
+  float: right;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 /*****************************************************************************/
 /*
@@ -196,7 +153,7 @@ ul.posts span {
 
 /*****************************************************************************/
 /*
-/* About 
+/* Portfolio 
 /*
 /*****************************************************************************/
 
@@ -211,22 +168,7 @@ ul.posts span {
   float: left; 
 }
 
-/*****************************************************************************/
-/*
-/* Asides 
-/*
-/*****************************************************************************/
 
-aside {
-  width: 360px;
-  display: block;
-  background-color: #f4f4f4;
-}
-
-.side {
-  width: 30%;
-  padding: 5px;
-}
 
 /*****************************************************************************/
 /*
@@ -265,4 +207,24 @@ aside {
   clear: both;
 }
 
+/*****************************************************************************/
+/*
+/* Slideshow
+/*
+/*****************************************************************************/
+.slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
 
+.slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}

@@ -12,16 +12,18 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 
+        <!-- Custom JS -->
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
     </head>
     <body class="{{ page.class }}">
         <div class="container">
-          <div class="site">
             <header class="header">
 
              <!-- <img src = "{{ site.baseurl}}/images/logo.img" width = "150px" height = "60px"> -->
 
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              
+              <h1 class="logo"><a href="{{ site.baseurl }}/index.html">{{ site.name }}</a></h1>
+            
               <Ul class="nav">
 
                 <li> <a href="{{ site.baseurl}}/index.html"> Home </a> </li>
@@ -37,6 +39,6 @@
             <main>
                 {{ content }}
             </main>    
-                       
+        </div>               
     </body> 
 </html> 
