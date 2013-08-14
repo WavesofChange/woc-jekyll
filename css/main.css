@@ -3,9 +3,20 @@
 /* Common
 /*
 /*****************************************************************************/
-
-@import url(http://fonts.googleapis.com/css?family=Dosis:600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/*****************************************************************************/
+/*
+/* woc site colors
+/* 
+/* blue: #36596d; 
+/* pink: #a54f57; 
+/* orange: #e3a112; -- no swatch for this one
+/* green: #b4c269/ #859648; 
+/* yellow: #eee810;  -- no swatch for this one
+/*
+/* @import url(http://fonts.googleapis.com/css?family=Dosis:800);
+/* @import url(http://fonts.googleapis.com/css?family=Lato:400);
+/*
+/*****************************************************************************/
 
 /* Global Reset */
 * {
@@ -17,12 +28,19 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px 'Lato', "HelveticaNeue", "Lucida Grande", sans-serif;
+  /*font: 13.34px 'Lato', "HelveticaNeue", "Lucida Grande", sans-serif; */
+  font-family: 'Lato', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; 
-  font-family: 13.34px 'Dosis';
+  /*font-size: 92.308%; 
+  font-family: 13.34px 'Dosis';*/
+
+  font-family: 'Dosis';
+  font-size: 16px;
+
 }
 
 h1 { margin-bottom: 1em; }
@@ -42,7 +60,6 @@ ul, ol {
   list-style-type: none;
 }
 
-
 /*****************************************************************************/
 /*
 /* Post
@@ -52,7 +69,6 @@ ul, ol {
   margin-bottom: 0;
   
 }
-
 
 /*****************************************************************************/
 /*
@@ -65,14 +81,13 @@ ul, ol {
 }
 
 .posts li {
-  line-height: 1.75em;
+  line-height: 1.333em;
 }
 
 .posts span {
   color: #aaa;
   font-size: 80%;
 }
-
 
 .nav {
   list-style-type: none;
@@ -170,8 +185,6 @@ aside {
   clear: left;
   float: left; 
 }
-
-
 
 /*****************************************************************************/
 /*
