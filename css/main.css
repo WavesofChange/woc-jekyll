@@ -28,24 +28,51 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  /*font: 13.34px 'Lato', "HelveticaNeue", "Lucida Grande", sans-serif; */
   font-family: 'Lato', 'Helvetica Neue', 'Lucida Grande', sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  /*font-size: 92.308%; 
-  font-family: 13.34px 'Dosis';*/
+h1, h2, h3, h4, h5, h6 { font-family: 'Dosis'; }
 
-  font-family: 'Dosis';
-  font-size: 16px;
-
+h1 { 
+  /*margin-bottom: 1em;*/
+  font-size: 25.888px;
+  line-height: 31.415px;
 }
 
-h1 { margin-bottom: 1em; }
+h2 { 
+  
+  font-size: 19.416px;
+  line-height: 25.888px;
+}
 
-p { margin: 1em 0; }
+h3 { 
+  font-size: 16.000px;
+  line-height: 19.416px;
+}
+
+h4 { 
+  font-size: 12.000px;
+  line-height: 16.000px;
+}
+
+h5 { 
+  font-size: 9.889px;
+  line-height: 12.000px;
+}
+
+h6 {  
+  font-size: 7.417px;
+  line-height: 9.889px;
+}
+
+p { 
+  margin: 1em 0; 
+  font-family: 'Lato';
+  font-size: 12px;
+  line-height: 16px;
+}
 
 a         { color: #00a; }
 a:hover   { color: #000; }
@@ -86,7 +113,7 @@ ul, ol {
 
 .posts span {
   color: #aaa;
-  font-size: 80%;
+  /*font-size: 80%;*/
 }
 
 .nav {
