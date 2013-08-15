@@ -4,21 +4,102 @@
   class: home
 ---
 
-<section> 
-  <h1>Recent Blog Posts</h1>
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/demo.css">
 
-  <ul class="posts">
-    {% for post in site.posts limit: 7 %}
-      <li>
-        <h2 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h2>
-        <p>
-          <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
-          <span class="date">{{ post.date | date_to_string }}</span>
-        </p>
-        <p class="teaser">{{ post.teaser }}</p> 
-      </li>
-    {% endfor %}
-  </ul>
+<section>
+  <!-- Place somewhere in the <body> of your page -->
+  <section class="slider">
+    <div id="slider" class="flexslider">
+      <ul class="slides">
+        <li data-thumb="{{site.baseurl}}/images/team1.jpg">
+          <img src="{{ site.baseurl }}/images/team1.jpg"/>
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team2.jpg">
+          <img src="{{ site.baseurl }}/images/team2.jpg" />
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team3.jpg">
+          <img src="{{ site.baseurl }}/images/team3.jpg"/>
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team4.jpg">
+          <img src="{{ site.baseurl }}/images/team4.jpg" />
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team5.jpg">
+          <img src="{{ site.baseurl }}/images/team5.jpg" />
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team6.jpg">
+          <img src="{{ site.baseurl }}/images/team6.jpg" />
+        </li>
+      </ul>
+    </div>
 
-  <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p> 
+    <div id="carousel" class="flexslider">
+      <ul class="slides">
+        <li data-thumb="{{site.baseurl}}/images/team1.jpg">
+          <img src="{{ site.baseurl }}/images/team1.jpg"/>
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team2.jpg">
+          <img src="{{ site.baseurl }}/images/team2.jpg" />
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team3.jpg">
+          <img src="{{ site.baseurl }}/images/team3.jpg"/>
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team4.jpg">
+          <img src="{{ site.baseurl }}/images/team4.jpg" />
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team5.jpg">
+          <img src="{{ site.baseurl }}/images/team5.jpg" />
+        </li>
+        <li data-thumb="{{ site.baseurl }}/images/team6.jpg">
+          <img src="{{ site.baseurl }}/images/team6.jpg" />
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section> 
+    <h1>Recent Blog Posts</h1>
+
+    <ul class="posts">
+      {% for post in site.posts limit: 7 %}
+        <li>
+          <h2 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h2>
+          <p>
+            <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+            <span class="date">{{ post.date | date_to_string }}</span>
+          </p>
+          <p class="teaser">{{ post.teaser }}</p> 
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p> 
+  </section>
+
+  <!-- FlexSlider -->
+  <script defer src="{{ site.baseurl}}/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 160, //itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+      });
+    });
+  </script>
 </section>
