@@ -230,8 +230,8 @@ aside {
 }
 
 .portfolio:nth-of-type(5n) { 
-  clear: left;
-  float: left; 
+  /*clear: left;*/
+  /*float: left; */
 }
 
 .padding {
