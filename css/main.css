@@ -80,6 +80,10 @@ a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
+.nav {
+  margin-bottom: 16px;
+}
+
 table {
   font-size: inherit;
   font: 100%;
@@ -122,11 +126,26 @@ ul, ol {
   list-style-type: none;
 }
 
-.nav li{
+.nav li {
   display: inline-block; 
-  padding-right: 20px;
+  padding-right: 110px;
+  
+}
+
+.nav li a {
+  text-decoration: none;
+  font-family: 'Dosis';
+  text-align: center;
+  font-size: 16px;
+  line-height: 19.416px;
+  color: #000;
 }
   
+.main-width {
+  /*width: 563.642px;*/
+  width: 65%;
+  float: left;
+}  
 
 /*****************************************************************************/
 /*
@@ -157,7 +176,7 @@ aside {
 }
 
 .project {
-  max-width: 500px;
+  max-width: 400px;
 }
 
 /*****************************************************************************/
@@ -210,11 +229,14 @@ aside {
   padding: 10px;
 }
 
-.portfolio:nth-of-type(6n) { 
+.portfolio:nth-of-type(5n) { 
   clear: left;
   float: left; 
 }
 
+.padding {
+  padding-top: 20px;
+}
 /*****************************************************************************/
 /*
 /* Basic Styles 

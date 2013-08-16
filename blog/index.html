@@ -8,7 +8,7 @@
 <ul class="posts">
   {% for post in site.posts %}
     <li>
-      <h2 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h2>
+      <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p>
         <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
         <span class="date">{{ post.date | date_to_string }}</span>
