@@ -141,11 +141,49 @@ ul, ol {
   color: #000;
 }
   
-.main-width {
-  /*width: 563.642px;*/
+.slide-width {
+ /* width: 618.047px;*/
   width: 65%;
   float: left;
-}  
+} 
+
+.bottom-width {
+  /*clear: both;*/
+  /*width: 1000px;*/
+  float: left;
+}
+
+.recent-width {
+  /*clear: both;*/
+  /*width: 464.486px;*/
+  width: 65%;
+  float: left;
+}
+
+.project-width {
+  /*clear: both;*/
+  width: 348.357px;
+  float: left;
+}
+
+.front-posts {
+  border: solid 1px;
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin: 10px;
+}
+
+.project-posts {
+  border: solid 1px;
+  width: 300px;
+  height: 400px;
+  float: right;
+  margin: 10px;
+
+}
+
+
 
 /*****************************************************************************/
 /*

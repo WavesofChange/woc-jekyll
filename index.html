@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/demo.css">
 
-<section class="main-width">
+<section class="slide-width">
   <!-- Place somewhere in the <body> of your page -->
   <section class="slider">
     <div id="slider" class="flexslider">
@@ -55,25 +55,7 @@
       </ul>
     </div>
   </section>
-
-  <section> 
-    <h1>Recent Blog Posts</h1>
-
-    <ul class="posts">
-      {% for post in site.posts limit: 7 %}
-        <li>
-          <h2 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h2>
-          <p>
-            <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
-            <span class="date">{{ post.date | date_to_string }}</span>
-          </p>
-          <p class="teaser">{{ post.teaser }}</p> 
-        </li>
-      {% endfor %}
-    </ul>
-
-    <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p> 
-  </section>
+</section>
 
   <!-- FlexSlider -->
   <script defer src="{{ site.baseurl}}/js/jquery.flexslider.js"></script>
@@ -102,7 +84,6 @@
       });
     });
   </script>
-</section>
 
 <aside class="right">
   <div>
@@ -113,4 +94,50 @@
     <h3>Relevant Links</h3>
       <!-- @TODO Add a list of the resources you have used for this project -->
   </div>
-<aside> 
+</aside> 
+
+<section class="bottom-width">
+  <section class="recent-width">
+    <h1>Recent Blog Posts</h1>
+    <div class="js-masonry" data-masonry-options='{ "columnWidth": 350px, "itemSelector": ".front-posts" }'> 
+      <div class="posts">
+        {% for post in site.posts limit: 7 %}
+        <div class="front-posts">   
+            <img src="{{ post.image }}" width="300px" height="200px">      
+            <h2 class="title"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+              <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+              <span class="date">{{ post.date | date_to_string }}</span>
+            </p>
+             <!--  <p class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></p>
+              <p class="date">{{ post.date | date_to_string }}</p> -->
+            <p class="teaser">{{ post.teaser }}</p> 
+            
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p>  -->
+  </section>
+
+  <section class="project-width">
+    <h1>Notable Projects</h1>
+    <div class="js-masonry" data-masonry-options='{ "columnWidth": 250, "itemSelector": ".project-posts" }'>
+      <div class="posts">
+        <div class="project-posts">
+          
+          <img src="" width="300px" height="200px">
+          <h2><a href="{{ site.baseurl }}/projects/project-yeah.html">Project Yeah</a></h2>
+          <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art. </p>
+        </div>
+
+        <div class="project-posts">
+          
+          <img src="" width="300px" height="200px">
+          <h2><a href="{{ site.baseurl }}/projects/def-dance-jam.html">Def Dance Jam</a></h2>
+          <p>Add my content here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
