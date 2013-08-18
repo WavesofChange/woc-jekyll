@@ -7,7 +7,6 @@
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/demo.css">
 
 <section class="slide-width">
-  <!-- Place somewhere in the <body> of your page -->
   <section class="slider">
     <div id="slider" class="flexslider">
       <ul class="slides">
@@ -70,7 +69,7 @@
         controlNav: false,
         animationLoop: false,
         slideshow: false,
-        itemWidth: 160, //itemWidth: 210,
+        itemWidth: 160,
         itemMargin: 5,
         asNavFor: '#slider'
       });
@@ -92,7 +91,6 @@
 
   <div>
     <h3>Relevant Links</h3>
-      <!-- @TODO Add a list of the resources you have used for this project -->
   </div>
 </aside> 
 
@@ -109,8 +107,6 @@
               <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
               <span class="date">{{ post.date | date_to_string }}</span>
             </p>
-             <!--  <p class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></p>
-              <p class="date">{{ post.date | date_to_string }}</p> -->
             <p class="teaser">{{ post.teaser }}</p> 
             
         </div>
@@ -136,7 +132,7 @@
           <h2><a href="{{ site.baseurl }}/projects/def-dance-jam.html">Def Dance Jam</a></h2>
           <p>Add my content here</p>
         </div>
-        
+
       </div>
     </div>
   </section>
