@@ -4,20 +4,19 @@
 ---
 
 <h1>Blog Posts</h1>
-<!-- <div class="js-masonry" data-masonry-options='{ "columnWidth": 250, "itemSelector": ".project" }'>  -->
-  <ul class="posts">
+<div class="js-masonry" data-masonry-options='{ "columnWidth": 100, "itemSelector": ".blogs" }'> 
+  <div class="posts">
     {% for post in site.posts %}
-    <!-- <div class="projects" style="border: solid 1px;"> -->
-      <li>
-        <img src="{{ post.image }}" width="200px">
-        <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        <p>
-          <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
-          <span class="date">{{ post.date | date_to_string }}</span>
-        </p>
-        <p class="teaser">{{ post.teaser }}</p> 
-      </li>
-    <!-- </div> -->
+    <div class="blogs">      
+      <img class="padding" src="{{ post.image }}" width="250px" height="150px">
+      <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p>
+        <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p> 
+    </div>
     {% endfor %}
-  </ul>
-<!-- </div> -->
+  </div>
+</div>
+

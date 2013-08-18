@@ -179,10 +179,17 @@ ul, ol {
   width: 300px;
   height: 400px;
   float: right;
-  margin: 10px;
+  margin-bottom: 10px;
 
 }
 
+.blogs {
+  border: solid 1px;
+  width: 250px;
+  height: 350px;
+  float: left;
+  margin-bottom: 50px;
+}
 
 
 /*****************************************************************************/
@@ -214,7 +221,10 @@ aside {
 }
 
 .project {
-  max-width: 400px;
+  max-width: 350px;
+  height: 450px;
+  border: solid 1px;
+  margin-bottom: 50px;
 }
 
 /*****************************************************************************/
@@ -273,7 +283,7 @@ aside {
 }
 
 .padding {
-  padding-top: 20px;
+  padding-bottom: 15px;
 }
 /*****************************************************************************/
 /*
