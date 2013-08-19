@@ -26,6 +26,8 @@
 
 html, body { height: 100%; }
 
+header { margin-bottom: 20px; }
+
 body {
   background-color: #FFF;
   font-family: 'Lato', 'Helvetica Neue', 'Lucida Grande', sans-serif;
@@ -76,7 +78,7 @@ p {
   line-height: 19.416px;
 }
 
-a         { color: #00a; }
+a         { color: #00a; text-decoration: none;}
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
@@ -95,30 +97,10 @@ ul, ol {
 
 /*****************************************************************************/
 /*
-/* Post
-/*
-/*****************************************************************************/
-.title {
-  margin-bottom: 0;
-}
-
-.title a {
-  text-decoration: none;
-}
-
-.author a {
-  text-decoration: none;
-}
-
-/*****************************************************************************/
-/*
 /* Home
 /*
 /*****************************************************************************/
 
-.logo a{
-  text-decoration: none;
-}
 
 .posts {
   margin-bottom: 2em;
@@ -133,14 +115,21 @@ ul, ol {
   /*font-size: 80%;*/
 }
 
+.navcontainer ul {
+  padding: 10px;
+  margin: 0;
+  list-style-type: none;
+  background-color: #a54f57;
+
+  text-align: center;
+}
+
 .nav {
   list-style-type: none;
 }
 
 .nav li {
   display: inline-block; 
-  padding-right: 110px;
-  
 }
 
 .nav li a {
@@ -150,8 +139,16 @@ ul, ol {
   font-size: 16px;
   line-height: 19.416px;
   color: #000;
+  padding: 9px 20px;
+  background-color: #a54f57;
+  border-right: 1px solid #fff;
 }
-  
+
+.nav li a:hover {
+  background-color: #c66169;
+  color: #fff;
+}
+
 .slide-width {
  /* width: 618.047px;*/
   width: 65%;
@@ -274,6 +271,10 @@ aside {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+.title {
+  margin-bottom: 0;
 }
 
 /*****************************************************************************/
