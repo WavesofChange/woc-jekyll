@@ -228,11 +228,21 @@ aside {
   margin: 0 auto;
 }
 
+/* project page */
+
 .project {
   max-width: 350px;
   height: 450px;
   border: solid 1px;
   margin-bottom: 50px;
+}
+
+.padding {
+  padding-bottom: 15px;
+}
+
+.inner-text {
+  padding: 0px 5px;
 }
 
 /*****************************************************************************/
@@ -300,9 +310,6 @@ aside {
   color: #000;
 }
 
-.padding {
-  padding-bottom: 15px;
-}
 /*****************************************************************************/
 /*
 /* Basic Styles 

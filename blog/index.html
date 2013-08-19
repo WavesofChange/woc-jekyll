@@ -10,13 +10,17 @@
     <div class="blogs"> 
       <a href="{{ site.baseurl }}{{ post.url }}">     
         <img class="padding" src="{{ post.image }}" width="250px" height="150px">
-        <h2>{{ post.title }}</h2>
+        <div class="inner-text">
+          <h2 class="title">{{ post.title }}</h2>
+        </div>
       </a>
-      <p>
-        <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
-        <span class="date">{{ post.date | date_to_string }}</span>
-      </p>
-      <p class="teaser">{{ post.teaser }}</p> 
+      <div class="inner-text">
+        <p>
+          <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </p>
+        <p class="teaser">{{ post.teaser }}</p> 
+      </div> 
     </div>
     {% endfor %}
   </div>
