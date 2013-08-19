@@ -7,9 +7,11 @@
 <div class="js-masonry" data-masonry-options='{ "columnWidth": 100, "itemSelector": ".blogs" }'> 
   <div class="posts">
     {% for post in site.posts %}
-    <div class="blogs">      
-      <img class="padding" src="{{ post.image }}" width="250px" height="150px">
-      <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="blogs"> 
+      <a href="{{ site.baseurl }}{{ post.url }}">     
+        <img class="padding" src="{{ post.image }}" width="250px" height="150px">
+        <h2>{{ post.title }}</h2>
+      </a>
       <p>
         <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
         <span class="date">{{ post.date | date_to_string }}</span>
