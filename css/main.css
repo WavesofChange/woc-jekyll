@@ -155,27 +155,23 @@ ul, ol {
   
 }
 
-.slide-width {
+.slider {
  /* width: 618.047px;*/
   width: 65%;
   float: left;
 } 
 
-.bottom-width {
-  /*clear: both;*/
-  /*width: 1000px;*/
-  float: left;
-}
-
-.recent-width {
+.recent-blogs {
   /*clear: both;*/
   /*width: 464.486px;*/
+  float: left;
   width: 65%;
   float: left;
 }
 
-.project-width {
+.notable-projects {
   /*clear: both;*/
+  float: left;
   width: 348.357px;
   float: left;
 }

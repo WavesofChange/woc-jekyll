@@ -4,83 +4,81 @@
   class: home
 ---
 
-<section class="slide-width">
-  <section class="slider">
-    <div id="slider" class="flexslider">
-      <ul class="slides">
-        <li data-thumb="{{site.baseurl}}/images/slideshow/team-mart-125.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-mart-125.jpg"/>
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg" />
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/team-workshop.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-workshop.jpg"/>
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg" />
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg" />
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg" />
-        </li>
-      </ul>
-    </div>
+<div class="slider">
+  <div id="slider" class="flexslider">
+    <ul class="slides">
+      <li data-thumb="{{site.baseurl}}/images/slideshow/team-mart-125.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-mart-125.jpg"/>
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg" />
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/team-workshop.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-workshop.jpg"/>
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg" />
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg" />
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg" />
+      </li>
+    </ul>
+  </div>
 
-    <div id="carousel" class="flexslider">
-      <ul class="slides">
-        <li data-thumb="{{site.baseurl}}/images/slideshow/team-mart-125.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-mart-125.jpg"/>
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg" />
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/team-workshop.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-workshop.jpg"/>
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg" />
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg" />
-        </li>
-        <li data-thumb="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg">
-          <img src="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg" />
-        </li>
-      </ul>
-    </div>
-  </section>
-</section>
+  <div id="carousel" class="flexslider">
+    <ul class="slides">
+      <li data-thumb="{{site.baseurl}}/images/slideshow/team-mart-125.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-mart-125.jpg"/>
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/showing-deedees-gifts.jpg" />
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/team-workshop.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-workshop.jpg"/>
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-at-mist.jpg" />
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/team-pre-planning.jpg" />
+      </li>
+      <li data-thumb="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg">
+        <img src="{{ site.baseurl }}/images/slideshow/raelene-science-fair.jpg" />
+      </li>
+    </ul>
+  </div>
+</div>
 
-  <!-- FlexSlider -->
-  <script defer src="{{ site.baseurl}}/js/jquery.flexslider.js"></script>
+<!-- FlexSlider -->
+<script defer src="{{ site.baseurl}}/js/jquery.flexslider.js"></script>
 
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
+<script type="text/javascript">
+  $(function(){
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function(){
+    $('#carousel').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      itemWidth: 160,
+      itemMargin: 5,
+      asNavFor: '#slider'
     });
-    $(window).load(function(){
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 160,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
 
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel",
-      });
+    $('#slider').flexslider({
+      animation: "slide",
+      controlNav: false,
+      animationLoop: false,
+      slideshow: false,
+      sync: "#carousel",
     });
-  </script>
+  });
+</script>
 
 <aside class="right">
   <div>
@@ -92,59 +90,57 @@
   </div>
 </aside> 
 
-<section class="bottom-width">
-  <section class="recent-width">
-    <h1>Recent Blog Posts</h1>
-    <div class="js-masonry" data-masonry-options='{ "columnWidth": 100, "itemSelector": ".front-posts" }'> 
-      <div class="posts">
-        {% for post in site.posts limit: 7 %}
-        <div class="front-posts">  
-          <a href="{{ site.baseurl}}{{ post.url }}"> 
-            <img src="{{ post.image }}" width="300px" height="200px">  
-            <div class="description">
-              <h2 class="title">{{ post.title }}</h2>
-            </div>
-          </a>
+<section class="recent-blogs">
+  <h1>Recent Blog Posts</h1>
+  <div class="js-masonry" data-masonry-options='{ "columnWidth": 100, "itemSelector": ".front-posts" }'> 
+    <div class="posts">
+      {% for post in site.posts limit: 7 %}
+      <div class="front-posts">  
+        <a href="{{ site.baseurl}}{{ post.url }}"> 
+          <img src="{{ post.image }}" width="300px" height="200px">  
           <div class="description">
-            <p>
-              <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
-              <span class="date">{{ post.date | date_to_string }}</span>
-            </p>
-            <p class="teaser">{{ post.teaser }}</p> 
-          </div>  
-        </div>
-      {% endfor %}
+            <h2 class="title">{{ post.title }}</h2>
+          </div>
+        </a>
+        <div class="description">
+          <p>
+            <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+            <span class="date">{{ post.date | date_to_string }}</span>
+          </p>
+          <p class="teaser">{{ post.teaser }}</p> 
+        </div>  
       </div>
+    {% endfor %}
     </div>
-    <!-- <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p>  -->
-  </section>
+  </div>
+  <!-- <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p>  -->
+</section>
 
-  <section class="project-width">
-    <h1>Notable Projects</h1>
-    <div class="js-masonry" data-masonry-options='{  "columnWidth": 100, "itemSelector": ".project-posts" }'> 
-      <div class="posts">
+<section class="notable-projects">
+  <h1>Notable Projects</h1>
+  <div class="js-masonry" data-masonry-options='{  "columnWidth": 100, "itemSelector": ".project-posts" }'> 
+    <div class="posts">
 
-        <div class="project-posts">
-          <a href="{{ site.baseurl }}/projects/project-yeah.html">
-            <img src="" width="300px" height="200px"> 
-            <div class="description">
-              <h2>Project Yeah</h2>
-              <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art. </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="project-posts">  
-          <a href="{{ site.baseurl }}/projects/def-dance-jam.html">
-            <img src="" width="300px" height="200px">
-            <div class="description">
-              <h2>Def Dance Jam</h2>
-              <p>Add my content here</p>
-            </div>
-          </a>
-        </div>
-
+      <div class="project-posts">
+        <a href="{{ site.baseurl }}/projects/project-yeah.html">
+          <img src="" width="300px" height="200px"> 
+          <div class="description">
+            <h2>Project Yeah</h2>
+            <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art. </p>
+          </div>
+        </a>
       </div>
+
+      <div class="project-posts">  
+        <a href="{{ site.baseurl }}/projects/def-dance-jam.html">
+          <img src="" width="300px" height="200px">
+          <div class="description">
+            <h2>Def Dance Jam</h2>
+            <p>Add my content here</p>
+          </div>
+        </a>
+      </div>
+
     </div>
-  </section>
+  </div>
 </section>
