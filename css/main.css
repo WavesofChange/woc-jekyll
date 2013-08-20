@@ -78,9 +78,12 @@ p {
   line-height: 19.416px;
 }
 
-a         { color: #00a; text-decoration: none;}
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #7f0e17; text-decoration: none; }
+a:hover   { color:  #ed7d86; opacity: 0.7; }
+a:hover h2 { color: #ed7d86; opacity: 0.7; }
+a:visited { color: #a54f57; }
+
+
 
 .nav {
   margin-bottom: 16px;
@@ -188,7 +191,6 @@ ul, ol {
   height: 400px;
   float: right;
   margin: 10px;
-
 }
 
 .blogs {
