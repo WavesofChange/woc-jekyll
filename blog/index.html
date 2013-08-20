@@ -10,11 +10,11 @@
     <div class="blogs"> 
       <a href="{{ site.baseurl }}{{ post.url }}">     
         <img class="padding" src="{{ post.image }}" width="250px" height="150px">
-        <div class="inner-text">
+        <div class="description">
           <h2 class="title">{{ post.title }}</h2>
         </div>
       </a>
-      <div class="inner-text">
+      <div class="description">
         <p>
           <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
           <span class="date">{{ post.date | date_to_string }}</span>

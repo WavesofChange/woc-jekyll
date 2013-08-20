@@ -148,8 +148,11 @@ ul, ol {
 }
 
 .nav li a:hover {
-  background-color: #c66169;
-  color: #fff;
+ /* background-color: #c66169; 
+ color: #fff;*/
+  background-color:  #a54f57;
+  opacity: .7;
+  
 }
 
 .slide-width {
@@ -239,12 +242,8 @@ aside {
   margin-bottom: 50px;
 }
 
-.padding {
-  padding-bottom: 15px;
-}
-
-.inner-text {
-  padding: 0px 5px;
+.description {
+  padding: 5px 5px 0px 8px;
 }
 
 /*****************************************************************************/

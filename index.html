@@ -100,12 +100,12 @@
         {% for post in site.posts limit: 7 %}
         <div class="front-posts">  
           <a href="{{ site.baseurl}}{{ post.url }}"> 
-            <img class="padding" src="{{ post.image }}" width="300px" height="200px">  
-            <div class="inner-text">
+            <img src="{{ post.image }}" width="300px" height="200px">  
+            <div class="description">
               <h2 class="title">{{ post.title }}</h2>
             </div>
           </a>
-          <div class="inner-text">
+          <div class="description">
             <p>
               <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
               <span class="date">{{ post.date | date_to_string }}</span>
@@ -126,8 +126,8 @@
 
         <div class="project-posts">
           <a href="{{ site.baseurl }}/projects/project-yeah.html">
-            <img class="padding" src="" width="300px" height="200px"> 
-            <div class="inner-text">
+            <img src="" width="300px" height="200px"> 
+            <div class="description">
               <h2>Project Yeah</h2>
               <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art. </p>
             </div>
@@ -136,8 +136,8 @@
 
         <div class="project-posts">  
           <a href="{{ site.baseurl }}/projects/def-dance-jam.html">
-            <img class="padding" src="" width="300px" height="200px">
-            <div class="inner-text">
+            <img src="" width="300px" height="200px">
+            <div class="description">
               <h2>Def Dance Jam</h2>
               <p>Add my content here</p>
             </div>
