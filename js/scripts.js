@@ -1,4 +1,5 @@
-<!-- -->
+<!-- Flexslider Script -->
+
 $(function(){
   SyntaxHighlighter.all();
 });
