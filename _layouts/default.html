@@ -24,31 +24,37 @@
   </head>
 
   <body class="{{ page.class }}">
-    
-    <header class="header">
-      <!-- THE WAVES OF CHANGE LOGO -->
-      <!-- <img src = "{{ site.baseurl}}/images/logo.img" width = "150px" height = "60px"> -->
 
-      <h1 class="logo"><a href="{{ site.baseurl }}/index.html">{{ site.name }}</a></h1>
-        
-      <div class="navcontainer">
-        <ul class="nav">
-          <li> <a href="{{ site.baseurl}}/index.html"> Home </a> </li>
-          <li> <a href="{{ site.baseurl}}/projects/index.html"> Projects </a> </li>
-          <li> <a href="{{ site.baseurl}}/blog/index.html"> Blog </a> </li>
-          <li> <a href="{{ site.baseurl}}/events/index.html"> Events </a> </li>
-          <li> <a href="{{ site.baseurl}}/gallery/index.html"> Gallery </a> </li>
-          <li> <a href="{{ site.baseurl}}/about/index.html"> About Us </a> </li> 
-          <li> <a href="{{ site.baseurl}}/contact/index.html"> Contact Us </a> </li>
-        </ul>
-      </div>
-    </header>
+    <div class="body-container">
+      <header class="header">
+        <!-- THE WAVES OF CHANGE LOGO -->
+        <!-- <img src = "{{ site.baseurl}}/images/logo.img" width = "150px" height = "60px"> -->
 
-    <div class="container">
-      <main>
-          {{ content }}
-      </main>    
-    </div>  
+        <h1 class="logo"><a href="{{ site.baseurl }}/index.html">{{ site.name }}</a></h1>
+          
+        <div class="navcontainer">
+          <ul class="nav">
+            <li> <a href="{{ site.baseurl}}/index.html"> Home </a> </li>
+            <li> <a href="{{ site.baseurl}}/projects/index.html"> Projects </a> </li>
+            <li> <a href="{{ site.baseurl}}/blog/index.html"> Blog </a> </li>
+            <li> <a href="{{ site.baseurl}}/events/index.html"> Events </a> </li>
+            <li> <a href="{{ site.baseurl}}/gallery/index.html"> Gallery </a> </li>
+            <li> <a href="{{ site.baseurl}}/about/index.html"> About Us </a> </li> 
+            <li> <a href="{{ site.baseurl}}/contact/index.html"> Contact Us </a> </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="container">
+        <main>
+            {{ content }}
+        </main>    
+      </div>  
+      
+      <!-- <footer>
+        Footer Information here
+      </footer> -->
+    </div>
 
     <!-- FlexSlider -->
     <script src="{{ site.baseurl }}/js/masonry.pkgd.min.js"></script>

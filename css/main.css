@@ -35,6 +35,13 @@ body {
   line-height: 16px;
 }
 
+footer {
+  background-color: #a54f57; 
+  display: table-row;
+  height: 1px;
+  
+}
+
 h1, h2, h3, h4, h5, h6 { font-family: 'Dosis'; }
 
 h1 { 
@@ -44,11 +51,9 @@ h1 {
   padding-bottom: 20px;
 }
 
-h2 { 
-  
+h2 {  
   font-size: 19.416px;
   line-height: 25.888px;
-  /*padding-bottom: 15px;*/
 }
 
 h3 { 
@@ -83,8 +88,6 @@ a:hover   { color:  #ed7d86; opacity: 0.7; }
 a:hover h2 { color: #ed7d86; opacity: 0.7; }
 a:visited { color: #a54f57; }
 
-
-
 .nav {
   margin-bottom: 16px;
 }
@@ -104,10 +107,55 @@ img {
 
 /*****************************************************************************/
 /*
-/* Home
+/* Layout
 /*
 /*****************************************************************************/
 
+.body-container {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+aside {
+  width: 30%;
+  float: right;
+  background-color: #f4f4f4;
+}
+
+.content {
+  width: 60%;
+  float: left;
+  padding: 0px 10px 0px 5px;
+}
+
+.about .content {
+  width: 100%;
+}
+
+/* project page */
+
+.project {
+  max-width: 350px;
+  min-height: 450px;
+  border: solid 1px;
+  margin-bottom: 50px;
+}
+
+.description {
+  padding: 5px 5px 0px 8px;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
 
 .posts {
   margin-bottom: 2em;
@@ -125,15 +173,11 @@ img {
 .navcontainer {
   padding: 20px;
   background-color: #a54f57;
-
 }
 
 .navcontainer ul {
-  /*padding: 20px;*/
   margin: 0;
   list-style-type: none;
-  /*background-color: #a54f57;*/
-
   text-align: center;
 }
 
@@ -227,47 +271,6 @@ img {
 
 .home-heading-color {
   color: #36596d;
-}
-
-/*****************************************************************************/
-/*
-/* Layout
-/*
-/*****************************************************************************/
-
-
-.content {
-  width: 60%;
-  float: left;
-  padding: 0px 10px 0px 5px;
-}
-
-.about .content {
-  width: 100%;
-}
-
-aside {
-  width: 30%;
-  float: right;
-  background-color: #f4f4f4;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* project page */
-
-.project {
-  max-width: 350px;
-  min-height: 450px;
-  border: solid 1px;
-  margin-bottom: 50px;
-}
-
-.description {
-  padding: 5px 5px 0px 8px;
 }
 
 /*****************************************************************************/
