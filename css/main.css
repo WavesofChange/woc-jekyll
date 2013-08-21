@@ -192,6 +192,10 @@ img {
   height: 216px;
 }
 
+.project-posts p {
+  color: #000;
+}
+
 .blogs {
   border: 1px solid #aaa;
   width: 273px;
@@ -213,6 +217,10 @@ img {
   opacity: .6;
   bottom: 0;
   position: absolute;
+}
+
+.home-heading-color {
+  color: #36596d;
 }
 
 /*****************************************************************************/
