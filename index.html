@@ -83,7 +83,7 @@
 
     <div class="project-posts">
       <a href="{{ site.baseurl }}/projects/project-yeah.html">
-        <img src="" width="300px" height="200px"> 
+        <img src="">
         <div class="description">
           <h2>Project Yeah</h2>
           <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art. </p>
@@ -93,7 +93,7 @@
 
     <div class="project-posts">  
       <a href="{{ site.baseurl }}/projects/def-dance-jam.html">
-        <img src="" width="300px" height="200px">
+        <img src="">
         <div class="description">
           <h2>Def Dance Jam</h2>
           <p>Add my content here</p>
@@ -102,26 +102,26 @@
     </div>
 
     <div class="project-posts">  
-      <a href="{{ site.baseurl }}/projects/def-dance-jam.html">
-        <img src="" width="300px" height="200px">
+      <a href="{{ site.baseurl }}/projects/ps-186.html">
+        <img src="https://trello-attachments.s3.amazonaws.com/51d8ec4c1cc7870f4e003b9d/51ed6b0257de54314f0053c0/889dad3b089bf899fe66f02149abc8c9/CAM00096.jpg">
         <div class="description">
-          <h2>Def Dance Jam</h2>
-          <p>Add my content here</p>
+          <h2>PS 186</h2>
+          <p>Waves of Change investigated the mystery behind the empty school</p>
         </div>
-      </a>
+      </a>    
     </div>
-
+    
   </div>
 </section>
 
 <section class="recent-blogs">
-  <h1>Recent Blog Posts</h1>
-  <div class="js-masonry" data-masonry-options='{ "columnWidth": 100, "itemSelector": ".front-posts" }'> 
+  <h1>Blog Posts</h1>
+  <div class="js-masonry" data-masonry-options='{ "columnWidth": 273, "gutter": 85, "itemSelector": ".blogs" }'> 
     <div class="posts">
       {% for post in site.posts limit: 6 %}
-      <div class="front-posts">  
-        <a href="{{ site.baseurl}}{{ post.url }}"> 
-          <img src="{{ post.image }}" width="300px" height="200px">  
+      <div class="blogs"> 
+        <a href="{{ site.baseurl }}{{ post.url }}">     
+          <img class="padding" src="{{ post.image }}">
           <div class="description">
             <h2 class="title">{{ post.title }}</h2>
           </div>
@@ -132,10 +132,9 @@
             <span class="date">{{ post.date | date_to_string }}</span>
           </p>
           <p class="teaser">{{ post.teaser }}</p> 
-        </div>  
+        </div> 
       </div>
-    {% endfor %}
+      {% endfor %}
     </div>
   </div>
-  <!-- <p><a href="{{ site.baseurl }}/blog" title="View all Blogs">View more entries</a></p>  -->
 </section>
