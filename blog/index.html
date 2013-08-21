@@ -4,12 +4,12 @@
 ---
 
 <h1>Blog Posts</h1>
-<div class="js-masonry" data-masonry-options='{ "columnWidth": 100, "itemSelector": ".blogs" }'> 
+<div class="js-masonry" data-masonry-options='{ "columnWidth": 273, "gutter": 85, "itemSelector": ".blogs" }'> 
   <div class="posts">
     {% for post in site.posts %}
     <div class="blogs"> 
       <a href="{{ site.baseurl }}{{ post.url }}">     
-        <img class="padding" src="{{ post.image }}" width="250px" height="150px">
+        <img src="{{ post.image }}">
         <div class="description">
           <h2 class="title">{{ post.title }}</h2>
         </div>
