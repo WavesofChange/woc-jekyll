@@ -1,8 +1,32 @@
-<!-- Flexslider Script -->
+
 
 $(function(){
+  
+  // flexslider 
   SyntaxHighlighter.all();
+
+  // masonry 
+  var msnry = $container.data('masonry');
+  
 });
+
+// masonry 
+
+$('.posts').masonry({
+  columnWidth: 273,
+  gutter: 85,
+  itemSelector: '.blogs'
+});
+
+$('.project-wrapper').masonry({
+  columnWidth: 325,
+  gutter: 12,
+  itemSelector: '.project'
+});
+
+
+//flexslider
+
 $(window).load(function(){
   $('#carousel').flexslider({
     animation: "slide",
@@ -22,3 +46,4 @@ $(window).load(function(){
     sync: "#carousel",
   });
 });
+

@@ -26,7 +26,7 @@
 
 html, body { height: 100%; }
 
-header { margin-bottom: 20px; }
+header { margin-bottom: 10px; }
 
 body {
   background-color: #FFF;
@@ -112,6 +112,14 @@ img {
 /*
 /*****************************************************************************/
 
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  text-align: center;
+  color: #a54f57;
+}
+
 .body-container {
   display: table;
   height: 100%;
@@ -121,6 +129,7 @@ img {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 20px 0px;
 }
 
 aside {
@@ -264,6 +273,36 @@ aside {
   height: 182px;
 }
 
+
+/******************************************************************************************/
+
+.recent-blog-posts {
+  border: 1px solid #aaa;
+  width: 273px;
+  min-height: 410px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.recent-blog-posts img{
+  height: 182px;
+}
+
+
+.recent-posts {
+  margin-bottom: 2em;
+}
+
+.recent-posts li {
+  line-height: 1.333em;
+}
+
+.recent-posts span {
+  color: #aaa;
+  /*font-size: 80%;*/
+}
+/******************************************************************************************/
+
 /* project page */
 
 .project {
@@ -281,6 +320,21 @@ aside {
   color: #000;
 }
 
+/* about page */
+
+.about-posts {
+  display: inline;
+  float: left;
+  border: 1px solid #fff;
+  width: 325px;
+  min-height: 216px;
+  margin: 0px 6px 50px 0px; 
+}
+
+.about-posts img {
+  height: 216px;
+  margin-bottom: 10px;
+}
 /*****************************************************************************/
 /*
 /* Posts

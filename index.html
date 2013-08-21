@@ -116,25 +116,24 @@
 
 <section class="recent-blogs">
   <h1>Recent Blog Posts</h1>
-  <div class="js-masonry" data-masonry-options='{ "columnWidth": 273, "gutter": 85, "itemSelector": ".blogs" }'> 
-    <div class="posts">
-      {% for post in site.posts limit: 6 %}
-      <div class="blogs"> 
-        <a href="{{ site.baseurl }}{{ post.url }}">     
-          <img class="padding" src="{{ post.image }}">
-          <div class="description">
-            <h2 class="title">{{ post.title }}</h2>
-          </div>
-        </a>
+  
+  <div class="posts">
+    {% for post in site.posts limit: 6 %}
+    <div class="blogs"> 
+      <a href="{{ site.baseurl }}{{ post.url }}">     
+        <img src="{{ post.image }}">
         <div class="description">
-          <p>
-            <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
-            <span class="date">{{ post.date | date_to_string }}</span>
-          </p>
-          <p class="teaser">{{ post.teaser }}</p> 
-        </div> 
-      </div>
-      {% endfor %}
+          <h2 class="title">{{ post.title }}</h2>
+        </div>
+      </a>
+      <div class="description">
+        <p>
+          <span class="author">by <a href="{{ site.baseurl }}/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </p>
+        <p class="teaser">{{ post.teaser }}</p> 
+      </div> 
     </div>
+    {% endfor %}
   </div>
 </section>
