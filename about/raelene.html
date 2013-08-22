@@ -7,7 +7,7 @@
 <section class="content">
   <h1>Raelene Holmes-Andrews</h1>
 
-  <img src="{{ site.baseurl}}/images/about/raelene.png">
+  <img src="/images/about/raelene.png">
 
   <p>Raelene A. Holmes-Andrews is my name. I’m a recent graduate of GED Plus Manhattan HUB. I’m an avid reader, I enjoy learning various things, and I love meeting new people. I don’t have many hobbies, since I am so engaged in staying on the right path in life and don’t want to get distracted, however, I love reading.</p> <p> My favorite author is Dave Pelzer. He’s very descriptive in his writing and it makes the reader become more attentive. Though I enjoy reading, it is not my favorite school subject; writing is amazing to me. Grammar, essays, and poetry stick out the most to me. Along with reading, writing also helps to improve a person’s ability to articulate, which is very important to me!</p> <p>I’m most excited to be a Waves of Change intern because I get to broaden my learning experiences. Seeing myself succeed and learn different things day by day makes me proud. Besides me being proud, it makes both of my parents proud as well. My mother is a West Harlem resident and has been all of her life. As for my father, he’s lived in Washington Heights for approximately 30 years. Prior to that, he’d lived in his hometown of Kingston, Jamaica.</p> <p>Knowing that I have my family standing behind me in every situation, and having my determination level at it’s highest point motivates and excites me. Spring 2014 is when I will further my education with the start of college. Majoring in either new media technology, or game design, I hope to gain as much experience as possible. After all, technology is becoming everything!</p>
 
@@ -27,16 +27,16 @@
       {% for post in site.posts %}
         {% if post.author == "Raelene Holmes" %}
           <li>
-            <h3 class="title"><a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h3>
+            <h3 class="title"><a href="/{{ post.url }}">{{ post.title }}</a></h3>
             <p><span class="date">{{ post.date | date_to_string }}</span></p>
           </li>
       {% endif %}
       {% endfor %}
     </ul>
-  </div>  
+  </div>
 
   <div>
     <h2>Projects by Raelene</h2>
     <!-- @TOOD Add a list of your projects. Each time you do a new project, you should add it here -->
-  </div>  
+  </div>
 </aside>
