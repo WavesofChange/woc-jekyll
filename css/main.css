@@ -156,8 +156,9 @@ aside {
 
 .navcontainer {
   padding: 20px;
-  background-color: #a54f57;
+  /*background-color: #a54f57;*/
 }
+
 
 .navcontainer ul {
   margin: 0;
@@ -165,9 +166,11 @@ aside {
   text-align: center;
 }
 
+/*
 .nav {
   list-style-type: none;
 }
+
 
 .nav li {
   display: inline-block; 
@@ -180,7 +183,7 @@ aside {
   font-size: 16px;
   line-height: 19.416px;
   color: #000;
-  padding: 19px;
+  padding: 10px;
   background-color: #a54f57;
   border-right: 1px solid #c66169;
 }
@@ -188,6 +191,89 @@ aside {
 .nav li a:hover {
   background-color: #c66169; 
   color: #fff;
+}
+*/
+
+#nav {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* the nav sits behind the menu button */
+  z-index: 1000;
+}
+
+#nav:target {
+  /* unless it&rsquo;s showing */
+  z-index: 1001;
+}
+
+#nav:target a {
+   /* make nav links sit up a level */
+  position: relative;
+  z-index: 1;
+}
+
+#nav a {
+  border-bottom-width: 0;
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  padding: 0 1em;
+}
+
+#nav:target a {
+  border-bottom-width: 1px;
+  line-height: 3em;
+  height: 3em;
+  -moz-transition: height .25s, line-height .25s;
+  -ms-transition: height .25s, line-height .25s;
+  -o-transition: height .25s, line-height .25s;
+  -webkit-transition: height .25s, line-height .25s;
+  transition: height .25s, line-height .25s;
+}
+
+#jump {
+  background: #000 url(/c/i/nav.png) 50% 50% no-repeat;
+  border: 1px solid #8b8b8b;
+  border-width: 0 0 1px 1px;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  height: 53px;
+  width: 53px;
+  text-indent: -999em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* make sure the menu button is on top */
+  z-index: 1001;
+}
+
+#back {
+  /* establish a positioning context for the closer */
+  position: relative;
+}
+
+#back a {
+  /* turn the link into a ghost */
+  background: transparent;
+  border: 0;
+  text-indent: -999em;
+  /* make it fill the screen */
+  position: absolute;
+  top: -101em;
+  bottom: -101em;
+  left: 0;
+  right: 0;
+  /* ensure it sits behind the other links */
+  z-index: 0;
+}
+
+body:not(:target) #nav {
+  /* these styles are only applied if :target and :not are
+     understood (and the body is not targeted, of course) */
 }
 
 /*****************************************************************************/
@@ -301,9 +387,12 @@ aside {
   color: #aaa;
   /*font-size: 80%;*/
 }
-/******************************************************************************************/
 
+/******************************************************************************/
+/*
 /* project page */
+/*
+/******************************************************************************/
 
 .project {
   width: 325px;
@@ -335,6 +424,7 @@ aside {
   height: 216px;
   margin-bottom: 10px;
 }
+
 /*****************************************************************************/
 /*
 /* Posts
@@ -444,11 +534,13 @@ aside {
 .right {
   float: right;
 }
+
 /*****************************************************************************/
 /*
 /* Slideshow
 /*
 /*****************************************************************************/
+
 .slideshow {
   margin: 50px auto;
   position: relative;

@@ -29,10 +29,12 @@
       <header class="header">
         <h1><a href="/index.html">{{ site.name }}</a></h1>
         <h2>Summer 2013</h2>
+        <a id="jump" href="#nav">Site Navigation</a>
       </header>
 
+      
       <nav class="navcontainer">
-        <ul class="nav">
+        <ul id="nav" tabindex="0">
           <li> <a href="/index.html"> Home </a> </li>
           <li> <a href="/projects/index.html"> Projects </a> </li>
           <li> <a href="/blog/index.html"> Blog </a> </li>
@@ -40,8 +42,22 @@
           <li> <a href="/gallery/index.html"> Gallery </a> </li>
           <li> <a href="/about/index.html"> About Us </a> </li>
           <li> <a href="/contact/index.html"> Contact Us </a> </li>
+          <li id="back"><a href="#top">Back to top</a></li>
         </ul>
       </nav>
+     
+
+      <!-- <nav class="navcontainer">
+        <div class="nav" tabindex="0">
+          <a href="/index.html"> Home </a>
+          <a href="/projects/index.html"> Projects </a>
+          <a href="/blog/index.html"> Blog </a>
+          <a href="/events/index.html"> Events </a>
+          <a href="/gallery/index.html"> Gallery </a>
+          <a href="/about/index.html"> About Us </a>
+          <a href="/contact/index.html"> Contact Us </a>
+        </div>
+      </nav> -->
 
       <div class="container">
         <main>
@@ -49,15 +65,16 @@
         </main>
       </div>
 
-      <!-- <footer>
+    <!-- 
+      <footer>
         Footer Information here
-      </footer> -->
+      </footer> 
+    -->
     </div>
 
     <!-- FlexSlider -->
     <script src="/js/masonry.pkgd.min.js"></script>
     <script defer src="/js/jquery.flexslider.js"></script>
     <script defer src="/js/scripts.js"></script>
-
   </body>
 </html>
