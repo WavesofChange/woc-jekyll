@@ -170,7 +170,6 @@ aside {
   text-align: center;
 }
 
-<<<<<<< HEAD
 #nav {
   margin: 0;
   position: absolute;
@@ -178,10 +177,10 @@ aside {
   right: 0;
   left: 0;
   z-index: 1000; /* the nav sits behind the menu button */
-=======
+}
+
 .nav li {
   display: inline-block;
->>>>>>> gh-pages
 }
 
 #nav li {
@@ -192,7 +191,7 @@ aside {
   border-bottom: 1px solid #ed7d86;
 }
 
-<<<<<<< HEAD
+
 #nav a {
   border-bottom-width: 0;
   overflow: hidden;
@@ -200,11 +199,11 @@ aside {
   line-height: 0;
   padding: 0 1em;
   color: #000;
-=======
+}
+
 .nav li a:hover {
   background-color: #c66169;
   color: #fff;
->>>>>>> gh-pages
 }
 
 #nav:target {
