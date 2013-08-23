@@ -129,7 +129,7 @@ img {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 50px 0px 10px 0px;
 }
 
 aside {
@@ -154,101 +154,81 @@ aside {
 /*
 /*****************************************************************************/
 
-.navcontainer {
-  padding: 20px;
-  /*background-color: #a54f57;*/
-}
-
-
-.navcontainer ul {
+#nav {
   margin: 0;
   list-style-type: none;
   text-align: center;
 }
 
-/*
-.nav {
+#navcontainer {
+  background-color: #a54f57; 
+}
+
+#navcontainer ul {
+  margin: 0;
   list-style-type: none;
-}
-
-
-.nav li {
-  display: inline-block; 
-}
-
-.nav li a {
-  text-decoration: none;
-  font-family: 'Dosis';
   text-align: center;
-  font-size: 16px;
-  line-height: 19.416px;
-  color: #000;
-  padding: 10px;
-  background-color: #a54f57;
-  border-right: 1px solid #c66169;
 }
-
-.nav li a:hover {
-  background-color: #c66169; 
-  color: #fff;
-}
-*/
 
 #nav {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  /* the nav sits behind the menu button */
-  z-index: 1000;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000; /* the nav sits behind the menu button */
 }
 
-#nav:target {
-  /* unless it&rsquo;s showing */
-  z-index: 1001;
-}
-
-#nav:target a {
-   /* make nav links sit up a level */
-  position: relative;
-  z-index: 1;
+#nav li {
+  font-size: 16px;
+  font-family: 'Dosis';
+  text-align: center;
+  background-color: #a54f57;
+  border-bottom: 1px solid #ed7d86;
 }
 
 #nav a {
-  border-bottom-width: 0;
-  overflow: hidden;
-  height: 0;
-  line-height: 0;
-  padding: 0 1em;
+  border-bottom-width: 0;
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  padding: 0 1em;
+  color: #000;
+}
+
+#nav:target {
+  z-index: 1001;  /* unless it&rsquo;s showing */
 }
 
 #nav:target a {
-  border-bottom-width: 1px;
-  line-height: 3em;
-  height: 3em;
+  border-bottom-width: 1px;
+  line-height: 3em;
+  height: 3em;
+  position: relative;
+  z-index: 1;  /* make nav links sit up a level */
+
   -moz-transition: height .25s, line-height .25s;
   -ms-transition: height .25s, line-height .25s;
   -o-transition: height .25s, line-height .25s;
   -webkit-transition: height .25s, line-height .25s;
   transition: height .25s, line-height .25s;
+
 }
 
 #jump {
-  background: #000 url(/c/i/nav.png) 50% 50% no-repeat;
-  border: 1px solid #8b8b8b;
-  border-width: 0 0 1px 1px;
-  cursor: pointer;
-  display: block;
-  padding: 0;
-  height: 53px;
-  width: 53px;
-  text-indent: -999em;
-  position: absolute;
-  right: 0;
-  top: 0;
-  /* make sure the menu button is on top */
-  z-index: 1001;
+  background: #fff url(/images/nav.png) 50% 50% no-repeat;
+  border: 1px solid #b8b8b8;
+  border-width: 0 0 1px 1px;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  height: 53px;
+  width: 53px;
+  text-indent: -999em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1001; /* make sure the menu button is on top */
 }
 
 #back {
@@ -271,12 +251,33 @@ aside {
   z-index: 0;
 }
 
-body:not(:target) #nav {
-  /* these styles are only applied if :target and :not are
-     understood (and the body is not targeted, of course) */
+@media (min-width: 511px){
+  
+
+  .nav li {
+    display: inline-block; 
+  }
+
+  .nav li a {
+    text-decoration: none;
+    font-family: 'Dosis';
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.416px;
+    color: #000;
+    padding: 10px;
+    background-color: #a54f57;
+    border-right: 1px solid #c66169;
+  }
+
+  .nav li a:hover {
+    background-color: #c66169; 
+    color: #fff;
+  }
 }
 
-/*****************************************************************************/
+
+/****************************************************************************
 /*
 /* Home
 /*
