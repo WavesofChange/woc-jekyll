@@ -6,11 +6,11 @@
 /*****************************************************************************/
 /*
 /* woc site colors
-/* 
-/* blue: #36596d; 
-/* pink: #a54f57; 
+/*
+/* blue: #36596d;
+/* pink: #a54f57;
 /* orange: #e3a112; -- no swatch for this one
-/* green: #b4c269/ #859648; 
+/* green: #b4c269/ #859648;
 /* yellow: #eee810;  -- no swatch for this one
 /*
 /* @import url(http://fonts.googleapis.com/css?family=Dosis:800);
@@ -36,49 +36,49 @@ body {
 }
 
 footer {
-  background-color: #a54f57; 
+  background-color: #a54f57;
   display: table-row;
   height: 1px;
-  
+
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Dosis'; }
 
-h1 { 
+h1 {
   /*margin-bottom: 1em;*/
   font-size: 25.888px;
   line-height: 31.415px;
   padding-bottom: 20px;
-  color: #36596d; 
+  color: #36596d;
 }
 
-h2 {  
+h2 {
   font-size: 19.416px;
   line-height: 25.888px;
 }
 
-h3 { 
+h3 {
   font-size: 16.000px;
   line-height: 19.416px;
 }
 
-h4 { 
+h4 {
   font-size: 12.000px;
   line-height: 16.000px;
 }
 
-h5 { 
+h5 {
   font-size: 9.889px;
   line-height: 12.000px;
 }
 
-h6 {  
+h6 {
   font-size: 7.417px;
   line-height: 9.889px;
 }
 
-p { 
-  margin: 1em 0; 
+p {
+  margin: 1em 0;
   font-family: 'Lato';
   font-size: 16px;
   line-height: 19.416px;
@@ -170,6 +170,7 @@ aside {
   text-align: center;
 }
 
+<<<<<<< HEAD
 #nav {
   margin: 0;
   position: absolute;
@@ -177,6 +178,10 @@ aside {
   right: 0;
   left: 0;
   z-index: 1000; /* the nav sits behind the menu button */
+=======
+.nav li {
+  display: inline-block;
+>>>>>>> gh-pages
 }
 
 #nav li {
@@ -187,6 +192,7 @@ aside {
   border-bottom: 1px solid #ed7d86;
 }
 
+<<<<<<< HEAD
 #nav a {
   border-bottom-width: 0;
   overflow: hidden;
@@ -194,6 +200,11 @@ aside {
   line-height: 0;
   padding: 0 1em;
   color: #000;
+=======
+.nav li a:hover {
+  background-color: #c66169;
+  color: #fff;
+>>>>>>> gh-pages
 }
 
 #nav:target {
@@ -300,7 +311,7 @@ aside {
  /* width: 618.047px;*/
   width: 65%;
   float: left;
-} 
+}
 
 .slideshow-text {
   width: 100%;
@@ -337,7 +348,7 @@ aside {
   border: 1px solid #aaa;
   width: 325px;
   min-height: 410px;
-  margin: 0px 5px 30px 0px; 
+  margin: 0px 5px 30px 0px;
 }
 
 .project-posts img {
@@ -399,7 +410,7 @@ aside {
   width: 325px;
   min-height: 410px;
   border: 1px solid #aaa;
-  margin: 0px 5px 50px 0px; 
+  margin: 0px 5px 50px 0px;
 }
 
 .project img {
@@ -418,7 +429,7 @@ aside {
   border: 1px solid #fff;
   width: 325px;
   min-height: 216px;
-  margin: 0px 6px 50px 0px; 
+  margin: 0px 6px 50px 0px;
 }
 
 .about-posts img {
@@ -470,17 +481,17 @@ aside {
 
 /*****************************************************************************/
 /*
-/* Portfolio 
+/* Portfolio
 /*
 /*****************************************************************************/
 
 .portfolio {
   display: inline;
-  float: left; 
+  float: left;
   padding: 10px;
 }
 
-.portfolio:nth-of-type(5n) { 
+.portfolio:nth-of-type(5n) {
   /*clear: left;*/
   /*float: left; */
 }
@@ -493,7 +504,7 @@ aside {
 
 /*****************************************************************************/
 /*
-/* Basic Styles 
+/* Basic Styles
 /*
 /*****************************************************************************/
 
@@ -513,7 +524,7 @@ aside {
 }
 
 .text-left {
-  text-align: left; 
+  text-align: left;
 }
 
 .text-right {
@@ -557,4 +568,32 @@ aside {
   left: 10px;
   right: 10px;
   bottom: 10px;
+}
+
+/*****************************************************************************/
+/*
+/* Journalists
+/*
+/*****************************************************************************/
+
+.journalist-item {
+  clear: both;
+  overflow: auto;
+  margin-top: 21px;
+}
+
+.journalist-item img {
+  max-width: 82px;
+  max-height: 82px;
+  overflow: hidden;
+  float: left;
+  margin-right: 21px;
+}
+
+.journalist-item h4 {
+  font-size: 16px;
+}
+
+.role {
+  font-size: 13px;
 }

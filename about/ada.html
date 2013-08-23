@@ -24,12 +24,13 @@
 <aside>
   <div>
     <h2>Blog Posts by Ada</h2>
-    <ul class="posts">
+    <ul>
       {% for post in site.posts %}
         {% if post.author == "Ada Gonzalez" %}
           <li>
             <h3 class="title"><a href="/{{ post.url }}">{{ post.title }}</a></h3>
             <p><span class="date">{{ post.date | date_to_string }}</span></p>
+            <p>{{ post.teaser }}</p>
           </li>
       {% endif %}
       {% endfor %}
@@ -38,6 +39,19 @@
 
   <div>
     <h2>Projects by Ada</h2>
-    <!-- @TOOD Add a list of your projects. Each time you do a new project, you should add it here -->
+
+    <ul class="projects">
+        <li>
+          <h3><a href="http://harlemny.deepdishwavesofchange.org/projects/project-yeah.html">Project Yeah</a></h3>
+          <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art.</p>
+        </li>
+        <li>
+          <h3><a href="http://harlemny.deepdishwavesofchange.org/projects/ps-186.html">P.S. 186 Long Forgotten</a></h3>
+          <p>Waves of Change investigated the mystery behind the empty school</p>
+        <li>
+          <h3><a href="http://harlemny.deepdishwavesofchange.org/projects/we-act.html">We Act</a></h3>
+        </li>
+
+    </ul>
   </div>
 </aside>
