@@ -6,11 +6,11 @@
 /*****************************************************************************/
 /*
 /* woc site colors
-/* 
-/* blue: #36596d; 
-/* pink: #a54f57; 
+/*
+/* blue: #36596d;
+/* pink: #a54f57;
 /* orange: #e3a112; -- no swatch for this one
-/* green: #b4c269/ #859648; 
+/* green: #b4c269/ #859648;
 /* yellow: #eee810;  -- no swatch for this one
 /*
 /* @import url(http://fonts.googleapis.com/css?family=Dosis:800);
@@ -36,49 +36,49 @@ body {
 }
 
 footer {
-  background-color: #a54f57; 
+  background-color: #a54f57;
   display: table-row;
   height: 1px;
-  
+
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Dosis'; }
 
-h1 { 
+h1 {
   /*margin-bottom: 1em;*/
   font-size: 25.888px;
   line-height: 31.415px;
   padding-bottom: 20px;
-  color: #36596d; 
+  color: #36596d;
 }
 
-h2 {  
+h2 {
   font-size: 19.416px;
   line-height: 25.888px;
 }
 
-h3 { 
+h3 {
   font-size: 16.000px;
   line-height: 19.416px;
 }
 
-h4 { 
+h4 {
   font-size: 12.000px;
   line-height: 16.000px;
 }
 
-h5 { 
+h5 {
   font-size: 9.889px;
   line-height: 12.000px;
 }
 
-h6 {  
+h6 {
   font-size: 7.417px;
   line-height: 9.889px;
 }
 
-p { 
-  margin: 1em 0; 
+p {
+  margin: 1em 0;
   font-family: 'Lato';
   font-size: 16px;
   line-height: 19.416px;
@@ -180,8 +180,93 @@ aside {
 }
 
 .nav li {
-  display: inline-block; 
+  display: inline-block;
 }
+
+#nav li {
+  font-size: 16px;
+  font-family: 'Dosis';
+  text-align: center;
+  background-color: #a54f57;
+  border-bottom: 1px solid #ed7d86;
+}
+
+
+#nav a {
+  border-bottom-width: 0;
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  padding: 0 1em;
+  color: #000;
+}
+
+.nav li a:hover {
+  background-color: #c66169;
+  color: #fff;
+}
+
+#nav:target {
+  z-index: 1001;  /* unless it&rsquo;s showing */
+}
+
+#nav:target a {
+  border-bottom-width: 1px;
+  line-height: 3em;
+  height: 3em;
+  position: relative;
+  z-index: 1;  /* make nav links sit up a level */
+
+  -moz-transition: height .25s, line-height .25s;
+  -ms-transition: height .25s, line-height .25s;
+  -o-transition: height .25s, line-height .25s;
+  -webkit-transition: height .25s, line-height .25s;
+  transition: height .25s, line-height .25s;
+
+}
+
+#jump {
+  background: #fff url(/images/nav.png) 50% 50% no-repeat;
+  border: 1px solid #b8b8b8;
+  border-width: 0 0 1px 1px;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  height: 53px;
+  width: 53px;
+  text-indent: -999em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1001; /* make sure the menu button is on top */
+}
+
+#back {
+  /* establish a positioning context for the closer */
+  position: relative;
+}
+
+#back a {
+  /* turn the link into a ghost */
+  background: transparent;
+  border: 0;
+  text-indent: -999em;
+  /* make it fill the screen */
+  position: absolute;
+  top: -101em;
+  bottom: -101em;
+  left: 0;
+  right: 0;
+  /* ensure it sits behind the other links */
+  z-index: 0;
+}
+
+@media (min-width: 511px){
+  
+
+  .nav li {
+    display: inline-block; 
+  }
 
   .nav li a {
     text-decoration: none;
@@ -195,9 +280,10 @@ aside {
     border-right: 1px solid #c66169;
   }
 
-.nav li a:hover {
-  background-color: #c66169; 
-  color: #fff;
+  .nav li a:hover {
+    background-color: #c66169; 
+    color: #fff;
+  }
 }
 
 
