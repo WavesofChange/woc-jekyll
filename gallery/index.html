@@ -3,3 +3,34 @@
   title: Waves of Change
 ---
 
+<h1>Gallery</h1>
+
+<p>Photos over the course of the internship</p>
+
+<div id="flipbook" class="page-wrapper">
+	<div class="hard">Turn.js</div>
+	<div class="hard"></div>
+	<div><img src="/images/team-walk-around-125/amsterdam-news-building.jpg"></div>
+	<div><img src="/images/team-walk-around-125/churh-7th-ave.jpg"></div>
+	<div><img src="/images/team-walk-around-125/hue-man-bookstore.jpg"></div>
+	<div><img src="/images/team-walk-around-125/rite-aid-125.jpg"></div>
+	<div class="hard"></div>
+	<div class="hard"></div>
+</div>
+
+<script type="text/javascript">
+$(window).ready(function() {
+	$("#flipbook").turn({
+		width: 600,
+		height: 300,
+		autoCenter: true
+	});
+});	
+
+$(window).bind('keydown', function(e){
+	if (e.keyCode==37)	$("#flipbook").turn("previous");
+	else if (e.keyCode==39)	$("#flipbook").turn("next");			
+});
+</script>
+
+<p>Extra stuff to say down here</p>
