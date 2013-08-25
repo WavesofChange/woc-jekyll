@@ -180,6 +180,7 @@ aside {
 .main-nav a:hover {
   background-color: #c66169;
   color: #fff;
+  opacity: 1;
 }
 
 #nav:target {
