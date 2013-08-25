@@ -19,6 +19,7 @@
 /*****************************************************************************/
 
 /* Global Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -172,7 +173,8 @@ aside {
   font-family: 'Dosis';
   text-align: center;
   background-color: #a54f57;
-  border-bottom: 0;
+  border-bottom: 1px solid #c66169;
+  color: #fff;
 }
 
 .main-nav a:hover {
@@ -214,7 +216,6 @@ aside {
   top: 0;
   z-index: 1001; /* make sure the menu button is on top */
 }
-
 
 #back {
   /* turn the link into a ghost */
