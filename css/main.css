@@ -25,9 +25,13 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { 
+  height: 100%; 
+}
 
-header { margin-bottom: 10px; }
+header { 
+  margin-bottom: 10px; 
+}
 
 body {
   background-color: #FFF;
@@ -113,8 +117,18 @@ img {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px 0px;
-  text-align: center;
+  text-align: left;
   color: #a54f57;
+}
+
+.header h1 {
+  font-size: 19px;
+  line-height: 16px;
+}
+
+.header h2{
+  font-size: 16px;
+  line-height: 12px;
 }
 
 .body-container {
@@ -143,6 +157,22 @@ aside {
 
 .about .content {
   width: 100%;
+}
+
+@media (min-width: 511px){
+  .header {
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 25.888px;
+    line-height: 31.415px;
+  }
+
+  .header h2{
+    font-size: 19.416px;
+    line-height: 25.888px;
+  }
 }
 
 /*****************************************************************************/
