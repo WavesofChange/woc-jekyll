@@ -23,6 +23,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 html, body { 
@@ -138,14 +139,14 @@ img {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 300px;
   margin: 0 auto;
-  padding: 50px 0px 10px 0px;
+  padding: 10px 15px 10px 15px;
 }
 
 aside {
-  width: 30%;
-  float: right;
+  width: 100%;
+  margin-bottom: 20px;  
   background-color: #f4f4f4;
 }
 
@@ -173,6 +174,18 @@ aside {
     font-size: 19.416px;
     line-height: 25.888px;
   }
+
+  .container {
+    max-width: 1000px;
+    padding: 50px 0px 10px 0px;
+  }
+
+  aside {
+    width: 30%;
+    float: right;
+    margin-bottom: none;
+    background-color: #f4f4f4;
+  }  
 }
 
 /*****************************************************************************/
@@ -311,11 +324,9 @@ aside {
 
 .posts span {
   color: #aaa;
-  /*font-size: 80%;*/
 }
 
 .slider {
- /* width: 618.047px;*/
   width: 65%;
   float: left;
 }
@@ -340,7 +351,6 @@ aside {
 .notable-projects {
   clear: both;
   float: left;
- /* width: 348.357px;*/
 }
 
 .description {
@@ -353,7 +363,7 @@ aside {
   display: inline;
   float: left;
   border: 1px solid #aaa;
-  width: 325px;
+  width: 273px;
   min-height: 410px;
   margin: 0px 5px 30px 0px;
 }
@@ -378,6 +388,11 @@ aside {
   height: 182px;
 }
 
+@media (min-width: 511px){
+  .project-posts {
+    width: 325px;
+  }
+}
 
 /******************************************************************************************/
 
@@ -414,7 +429,7 @@ aside {
 /******************************************************************************/
 
 .project {
-  width: 325px;
+  width: 273px;
   min-height: 410px;
   border: 1px solid #aaa;
   margin: 0px 5px 50px 0px;
@@ -434,9 +449,9 @@ aside {
   display: inline;
   float: left;
   border: 1px solid #fff;
-  width: 325px;
+  width: 273px;
   min-height: 216px;
-  margin: 0px 6px 50px 0px;
+  margin: 20px 6px;
 }
 
 .about-posts img {
@@ -444,6 +459,19 @@ aside {
   margin-bottom: 10px;
 }
 
+@media (min-width: 511px){
+  .project {
+    width: 325px;
+    min-height: 410px;
+    border: 1px solid #aaa;
+    margin: 0px 5px 50px 0px;
+  }
+
+  .about-posts {
+    width: 325px;
+    margin: 0px 6px 50px 0px;
+  }
+}
 /*****************************************************************************/
 /*
 /* Posts
