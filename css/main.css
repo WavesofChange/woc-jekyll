@@ -31,7 +31,7 @@ html, body {
 }
 
 header { 
-  margin-bottom: 10px; 
+ /* margin-bottom: 20px; */
 }
 
 body {
@@ -117,31 +117,42 @@ img {
 .header {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 10px 0px;
+  padding: 5px 0px 0px 15px;
   text-align: left;
   color: #a54f57;
 }
 
 .header h1 {
-  font-size: 19px;
-  line-height: 16px;
+  font-size: 19.416px;
+  line-height: 16.000px;
 }
 
-.header h2{
-  font-size: 16px;
-  line-height: 12px;
+.header h2 {
+  font-size: 16.000px;
+  line-height: 12.000px;
 }
 
 .body-container {
-  display: table;
+  /*display: table;*/
   height: 100%;
   width: 100%;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 300px;
+  width: 100%;
   margin: 0 auto;
-  padding: 10px 15px 10px 15px;
+  /*background-color: #fdffdf;*/
+}
+
+main {
+  /*background-color: #dffdff;*/
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+main h1 {
+  text-align: center;
 }
 
 aside {
@@ -160,7 +171,7 @@ aside {
   width: 100%;
 }
 
-@media (min-width: 511px){
+@media (min-width: 511px) {
   .header {
     text-align: center;
   }
@@ -170,15 +181,25 @@ aside {
     line-height: 31.415px;
   }
 
-  .header h2{
+  .header h2 {
     font-size: 19.416px;
     line-height: 25.888px;
   }
 
   .container {
     max-width: 1000px;
-    padding: 50px 0px 10px 0px;
+    /*padding: 50px 0px 10px 0px;*/
   }
+
+  main {
+  max-width: 1000px;
+  padding: 0;
+  margin: 0;
+  }
+
+  main h1 {
+  text-align: left;
+}
 
   aside {
     width: 30%;
@@ -327,7 +348,7 @@ aside {
 }
 
 .slider {
-  width: 65%;
+  width: 100%;
   float: left;
 }
 
@@ -359,6 +380,11 @@ aside {
 
 /* Projects on 1st page without masonry */
 
+.project-wrapper {
+  margin: 0 auto;
+  width: auto;
+}
+
 .project-posts {
   display: inline;
   float: left;
@@ -389,6 +415,11 @@ aside {
 }
 
 @media (min-width: 511px){
+  .slider {
+    width: 65%;
+    float: left;
+  }
+
   .project-posts {
     width: 325px;
   }
@@ -603,6 +634,31 @@ aside {
   left: 10px;
   right: 10px;
   bottom: 10px;
+}
+
+/*****************************************************************************/
+/*
+/* Slideshow
+/*
+/*****************************************************************************/
+
+/* Responsive iFrame */
+ 
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.responsive-iframe-container iframe, .vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
 }
 
 /*****************************************************************************/
