@@ -476,6 +476,7 @@ aside {
 
 .project img {
   height: 216px;
+  width: 100%;
 }
 
 .project p{
