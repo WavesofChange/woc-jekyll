@@ -13,7 +13,7 @@
 
   <p>   My short term goals are to improve myself academically and strive for a higher gpa average when school begins. My long term goal would be to become successful. I have hopes of becoming a neonatal nurse or a midwife. My aspirations are to excel and become something great in life.</p>
 
-  <p>   A few interesting facts about me is that I have a twin brother, my favorite books are Of mice and men, Fahrenheit 451, and The boy in the striped pajamas, and I have an older sister and brother. My favorite subjects are English and Math and I take a strong interest in art.
+  <p>   A few interesting facts about me is that I have a twin brother, my favorite books are Of mice and men, Fahrenheit 451, and The boy in the striped pajamas, and I have an older sister and brother. My favorite subjects are English and Math and I take a strong interest in art.</p>
 
   <h3>connect</h3>
   <ul>
@@ -24,12 +24,13 @@
 <aside>
   <div>
     <h2>Blog Posts by Raliat</h2>
-    <ul class="posts">
+    <ul>
       {% for post in site.posts %}
         {% if post.author == "Raliat Akesode" %}
           <li>
-            <h3 class="title"><a href="/{{ post.url }}">{{ post.title }}</a></h3>
+            <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p><span class="date">{{ post.date | date_to_string }}</span></p>
+            <p>{{ post.teaser }}</p>
           </li>
       {% endif %}
       {% endfor %}
@@ -38,13 +39,15 @@
 
   <div>
     <h2>Projects by Raliat</h2>
-    <li>
-          <h3><a href="http://harlemny.deepdishwavesofchange.org/projects/project-yeah.html">Project Yeah</a></h3>
-          <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art.</p>
-        </li>
-        <li>
-          <h3><a href="http://harlemny.deepdishwavesofchange.org/projects/hotel-theresa.html">Hotel Theresa</a></h3>
-          <p>Hotel Theresa was a hotel for African Americans in Harlem</p>
-        </li>
+    <ul>
+      <li>
+            <h3><a href="/projects/project-yeah.html">Project Yeah</a></h3>
+            <p>The Young Empowered Artists of Harlem, acronymed Y.E.A.H, is a project aimed at tackling the problem of violence through the power of art.</p>
+          </li>
+          <li>
+            <h3><a href="/projects/hotel-theresa.html">Hotel Theresa</a></h3>
+            <p>Hotel Theresa was a hotel for African Americans in Harlem</p>
+          </li>
+      </ul>
   </div>
 </aside>
