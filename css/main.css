@@ -195,14 +195,14 @@ aside {
   }
 
   main {
-  max-width: 1000px;
-  padding: 0;
-  margin: 0;
+    max-width: 1000px;
+    padding: 0;
+    margin: 0;
   }
 
   main h1 {
-  text-align: left;
-}
+    text-align: left;
+  }
 
   aside {
     width: 30%;
