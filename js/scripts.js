@@ -41,3 +41,11 @@ $(window).load(function(){
   });
 });
 
+
+//gallery flexslider 
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+  
