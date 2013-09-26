@@ -160,12 +160,14 @@ aside {
   width: 100%;
   margin-bottom: 20px;  
   background-color: #f4f4f4;
+  clear: both;
 }
 
 .content {
   width: 60%;
   float: left;
   padding: 0px 10px 0px 5px;
+  /*clear: both;*/
 }
 
 .about .content {
@@ -193,14 +195,14 @@ aside {
   }
 
   main {
-  max-width: 1000px;
-  padding: 0;
-  margin: 0;
+    max-width: 1000px;
+    padding: 0;
+    margin: 0;
   }
 
   main h1 {
-  text-align: left;
-}
+    text-align: left;
+  }
 
   aside {
     width: 30%;
@@ -645,9 +647,23 @@ aside {
   bottom: 10px;
 }
 
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-control-nav {
+  display: none;
+}
+
+@media (min-width: 511px){
+  .flex-control-nav {
+    display: inline-block;
+  }
+}
 /*****************************************************************************/
 /*
-/* Slideshow
+/* Calendar
 /*
 /*****************************************************************************/
 
