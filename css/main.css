@@ -338,6 +338,14 @@ aside {
 /*
 /*****************************************************************************/
 
+#intro {
+  font-size: 16px;
+  line-height: 24px;
+  /*background-color: #4f829e;
+  color: #f4f4f4;*/
+  padding: 5px;
+}
+
 .posts {
  /* margin-bottom: 2em;*/
  margin: 0 auto;
