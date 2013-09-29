@@ -15,6 +15,12 @@ $(function(){
     itemSelector: '.project'
   });
 
+  $('.image-container').masonry({
+    columnWidth: 150,
+    gutter: 20,
+    itemSelector: '.photos'
+  });
+
 });
 
 
