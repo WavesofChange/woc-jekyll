@@ -6,7 +6,7 @@
 
 <h1>Mentors</h1>
 
-<section class="content">
+<!-- <section class="content">
 	<p>Our wonderful mentors took the time to explain some of what went on in their lives, either in person or via video chat. This page displays some of what we learned about and from them. </p>
 
 	<h2>Marina Ortiz</h2>
@@ -27,5 +27,31 @@
 	<img src="../images/mentors/rushaine.jpeg">
 
 	<p>Rushaine shared her insight on life as a web developer.</p>
+
+</section>
+ -->
+
+<section class="content">
+	<p>Our wonderful mentors took the time to explain some of what went on in their lives, either in person or via video chat. This page displays some of what we learned about and from them. </p>
+
+	<div class="posts">
+    {% for post in site.posts limit: 6 %}
+    <div class="blogs">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}">
+        <div class="description">
+          <h2 class="title">{{ post.title }}</h2>
+        </div>
+      </a>
+      <div class="description">
+        <p>
+          <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </p>
+        <p class="teaser">{{ post.teaser }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 
 </section>
