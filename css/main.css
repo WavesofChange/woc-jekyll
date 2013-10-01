@@ -730,13 +730,15 @@ aside {
 /*****************************************************************************/
 
 .photos {
-  width: 150px;
-  height: 120px;
+  /*width: 150px;
+  height: 120px;*/
   margin-bottom: 15px;
 } 
 
-
-
+.photos img{
+  width: 150px;
+  height: 120px;
+}
 
 
 
