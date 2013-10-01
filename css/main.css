@@ -740,5 +740,19 @@ aside {
   height: 120px;
 }
 
+/*****************************************************************************/
+/*
+/* Gallery
+/*
+/*****************************************************************************/
 
+.mentor-profile {
+  background-color: #a54f57; 
+  height: 151px; 
+  margin-bottom: 15px;
+}
+
+.mentor-profile img{
+  padding-right: 5px;
+}  
 

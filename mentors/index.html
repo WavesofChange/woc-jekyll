@@ -1,41 +1,18 @@
 ---
   layout: default
   title: Waves of Change
-  class: mentors
 ---
 
 <h1>Mentors</h1>
 
-<!-- <section class="content">
-	<p>Our wonderful mentors took the time to explain some of what went on in their lives, either in person or via video chat. This page displays some of what we learned about and from them. </p>
+  <div class="mentor-profile">
+    <img class= "left" src="../images/mentors/marina.jpg">
+    <h2>Marina Ortiz</h2>
+    <p>Marina gave a workshop on her work with the East Harlem Preservation. </p>
+  </div>
 
-	<h2>Marina Ortiz</h2>
-
-	<img src="../images/mentors/marina.jpg">
-
-	<p>Marina gave a workshop on her work with the East Harlem Preservation. </p>
-
-	<h2>Netia McCray</h2>
-
-	<img src="../images/mentors/netia.jpg">
-
-	<p>Netia shared her experiences being a Black female entrepreneur. </p>
-
-
-	<h2>Rushaine McBean</h2>
-
-	<img src="../images/mentors/rushaine.jpeg">
-
-	<p>Rushaine shared her insight on life as a web developer.</p>
-
-</section>
- -->
-
-<section class="content">
-	<p>Our wonderful mentors took the time to explain some of what went on in their lives, either in person or via video chat. This page displays some of what we learned about and from them. </p>
-
-	<div class="posts">
-    {% for post in site.posts limit: 6 %}
+  <div class="posts">
+    {% for post in site.categories.mentors-marina  %}
     <div class="blogs">
       <a href="{{ post.url }}">
         <img src="{{ post.image }}">
@@ -54,4 +31,56 @@
     {% endfor %}
   </div>
 
-</section>
+  <div class="mentor-profile">
+    <img class= "left" src="../images/mentors/netia.jpg">
+    <h2>Netia McCray</h2>
+    <p>Netia shared her experiences being a Black female entrepreneur.</p>
+  </div>
+
+  <div class="posts">
+    {% for post in site.categories.mentors-netia  %}
+    <div class="blogs">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}">
+        <div class="description">
+          <h2 class="title">{{ post.title }}</h2>
+        </div>
+      </a>
+      <div class="description">
+        <p>
+          <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </p>
+        <p class="teaser">{{ post.teaser }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="mentor-profile">
+    <img class= "left" src="../images/mentors/rushaine.jpeg">
+    <h2>Rushaine McBean</h2>
+    <p>Rushaine shared her insight on life as a web developer.</p>
+  </div>
+
+	<div class="posts">
+    {% for post in site.categories.mentors-rushaine  %}
+    <div class="blogs">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}">
+        <div class="description">
+          <h2 class="title">{{ post.title }}</h2>
+        </div>
+      </a>
+      <div class="description">
+        <p>
+          <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </p>
+        <p class="teaser">{{ post.teaser }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
