@@ -14,7 +14,8 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/css/flexslider.css">
-    <link rel="stylesheet" type="text/css" href="/css/turn.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -26,7 +27,20 @@
 
   <body class="{{ page.class }}">
 
-    <div class="body-container" style="background-image: url('images/starbackground.jpg');">
+    <div class="body-container">
+
+      <nav class="site-navigation" role="navigation">
+        <ul id="nav" class="main-nav" tabindex="0">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects/index.html">Collaborations</a></li>
+          <li><a href="/history/index.html">Harlem History</a></li>
+          <li><a href="/mentors">Mentors</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/about/index.html">About Us</a></li>
+          <li><a href="/contact/index.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
       <header class="header" role="banner">
         <h1><a href="/index.html">{{ site.name }}</a></h1>
         <h2>Summer 2013</h2>
@@ -34,19 +48,6 @@
 
       <a id="skip-to-nav" href="#nav">Skip to Site Navigation</a>
 
-      <nav class="site-navigation" role="navigation">
-        <ul id="nav" class="main-nav" tabindex="0">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/projects/index.html">Collaborations</a></li>
-          <li><a href="/history/index.html">Harlem History</a></li>
-          <li><a href="/mentors/index.html">Mentors</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
-         <!--  <li><a href="/events/index.html">Events</a></li> -->
-          <li><a href="/gallery/index.html">Gallery</a></li>
-          <li><a href="/about/index.html">About Us</a></li>
-          <li><a href="/contact/index.html">Contact Us</a></li>
-        </ul>
-      </nav>
 
       <div class="container">
         <main>
