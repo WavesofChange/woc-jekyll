@@ -1,5 +1,7 @@
 # Require any additional compass plugins here.
 require 'color-schemer'
+require 'modular-scale'
+require 'toolkit'
 require 'susy'
 
 
