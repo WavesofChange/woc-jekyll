@@ -1,0 +1,12 @@
+/* line 21, ../../../.rvm/gems/ruby-1.9.3-p327/gems/color-schemer-0.2.7/stylesheets/color-schemer/_mixins.scss */
+body:before {
+  content: "";
+  display: block;
+  height: 2em;
+  background: -moz-linear-gradient(left, #a54f57 0%, #a54f57 25%, #a5724f 25%, #a5724f 50%, #4fa59d 50%, #4fa59d 75%, #4f82a5 75%, #4f82a5 100%);
+  background: -o-linear-gradient(left, #a54f57 0%, #a54f57 25%, #a5724f 25%, #a5724f 50%, #4fa59d 50%, #4fa59d 75%, #4f82a5 75%, #4f82a5 100%);
+  background: -webkit-linear-gradient(left, #a54f57 0%, #a54f57 25%, #a5724f 25%, #a5724f 50%, #4fa59d 50%, #4fa59d 75%, #4f82a5 75%, #4f82a5 100%);
+  background: linear-gradient(to right, #a54f57 0%, #a54f57 25%, #a5724f 25%, #a5724f 50%, #4fa59d 50%, #4fa59d 75%, #4f82a5 75%, #4f82a5 100%);
+  position: relative;
+  z-index: 999999999999;
+}

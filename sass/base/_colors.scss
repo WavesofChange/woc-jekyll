@@ -1,0 +1,22 @@
+// WOC Colors
+
+$blue: #36596d;
+$pink: #a54f57;
+$orange: #e3a112;
+$green: #b4c269; //#859648
+$yellow: #eee810;
+
+// Color Schemer Defaults
+$cs-primary           : $pink;
+$cs-scheme            : tetrad;   // mono, complement, triad, tetrad, analogic, accented-analogic
+// $cs-hue-offset        : 30 !default;
+// $cs-brightness-offset : false !default;
+// $cs-color-model       : rgb !default;    // rgb, ryb
+// $cs-colorblind        : normal !default;
+
+$primary: cs-primary();
+$secondary: cs-secondary(); // too light, darkening this up a bit.
+$tertiary: cs-tertiary();
+$quadrary: cs-quadrary();
+
+@include cs-test($primary $secondary $tertiary $quadrary);
