@@ -10,7 +10,20 @@
 // ---------------------------------------------------------------------------
 // Modules
 
+@import 'toolkit/border-box';
+@import 'toolkit/fluid-media';
+
+////////////////////////
+// Fluid Embeds and whatever WITH NO JAVASCIPT!
+////////////////////////
+@import 'toolkit/intrinsic-ratio';
+// $intrinsic-ratio: 16/9 !default;
+// $intrinsic-ratio-width: 100% !default;
+// $intrinsic-ratio-elements: '> *' !default;
+// $intrinsic-ratio-extend: true !default;
+// $intrinsic-ratio-direction: top !default;
+
+
 @import "base/colors";
 @import "base/typography";
 
-@import 'toolkit/border-box';
