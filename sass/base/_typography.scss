@@ -1,0 +1,21 @@
+// Typography
+
+// Modular Scale Defaults
+
+$ratio: major-third() fifth();
+$base-size: 16px;
+$round-pixels: true;
+
+// ---------------------------------------------------------------------------
+// Size Settings
+
+$font-size-base: $base-size;
+$font-size-med: ms(1);
+$font-size-small: ms(-1);
+$font-size-xsmall: ms(-2);
+$font-size-xxsmall: ms(-3);
+$font-size-xxxsmall: ms(-4);
+$font-size-large: ms(4);
+$font-size-xlarge: ms(6);
+$font-size-xxlarge: ms(12);
+$font-size-xxxlarge: ms(16);

@@ -1,0 +1,35 @@
+#{headings(all)} { font-family: 'Dosis'; }
+
+#{headings(1, 2)} {
+  @include adjust-leading-to(1, $font-size-large);
+  letter-spacing: -0.03125em;
+}
+
+h1 {
+  color: #36596d;;
+}
+
+h2 {
+  @include padding-leader(2, $font-size-large);
+  @include padding-trailer(1, $font-size-large);
+}
+
+
+#{headings(3, 4)} {
+  @include padding-leader(1.5);
+  @include padding-trailer(.5);
+  text-transform: uppercase;
+  letter-spacing: .03125em;
+}
+
+// Headings in <header>
+
+header {
+  h1 {
+    font-size: inherit;
+    font-size: $font-size-xxlarge;
+  }
+  p {
+    font-size: $font-size-large;
+  }
+}
