@@ -1,5 +1,93 @@
-// Landing Page
+// Landing Pages
 
-section {
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 79em;
+  background: #dbe6b5;
+  padding: 1em
+}
 
+
+// Article Pages
+.article-layout .container,
+.project-layout .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.post-article {
+  .column {
+    width: percentage(1/2);
+    float: left;
+    li {
+      display: block;
+      float: none;
+      width: 100%;
+    }
+  }
+  h1 {
+    text-align: center;
+    @include adjust-font-size-to($font-size-small);
+  }
+  border-top: 2px solid $secondary-color;
+  ul {
+    display: table;
+  }
+  li {
+    width: percentage(1/2);
+    float: left;
+    border-bottom: 1px dotted $secondary-color;
+    display: table-cell;
+    padding: 5px 10px;
+    &:nth-child(even) {
+      border-left: 1px dotted $secondary-color;
+    }
+  }
+}
+
+// Project Pages
+.project-full {
+  .column {
+    width: percentage(3/5);
+    float: left;
+  }
+  .project-footer {
+    width: percentage(2/5);
+    float: right;
+  }
+}
+
+
+// Blog/Article styles
+.article-full,
+.project-full,
+.bio-full {
+  .entry-header {
+    text-align: center;
+  }
+  .entry-details {
+    font-style: italic;
+  }
+  .author {
+    font-weight: 500;
+  }
+  .media {
+    @include margin-trailer(1);
+  }
+}
+
+.entry-footer h1 {
+  text-align: center;
+  @include adjust-font-size-to($font-size-small);
+}
+
+.article-full .main-content p,
+.project-intro {
+  @include adjust-font-size-to($font-size-medium);
+  @include margin-trailer(1);
+}
+
+.project-intro {
+  text-align: left;
 }

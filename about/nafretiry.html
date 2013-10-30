@@ -2,13 +2,18 @@
   layout: default
   title: Waves of Change
   author: Nefretiry Philippe
+  class: article-layout
 ---
 
-<section class="content">
+<article class="bio-full">
+  <header class="entry-header">
+    <figure class="media media-photo"><div class="media-wrapper">
+      <img src="/images/about/nefysphoto.jpg">
+    </div></figure>
   <h1>Nafretiry “Nefy” Philippe</h1>
+</header>
 
-  <img src="/images/about/nefysphoto.jpg" width="500px" height="400px">
-
+<div class="main-content">
  <p>My name is Nafretiry Philippe; and I currently attend Mott Hall High School. This fall, I will enter the 11th grade. I plan to graduate high school with an advanced regents diploma. A long-term goal I have is to pass my bar and attend law school. I plan to attend either Stony Brook or Syracuse University; I want to go away but not too far. My hobbies are writing and exercising; I like to walk and run around. My activities including extracurricular are attending the <a href="http://www.heaf.org/"> HEAF (Harlem Education Activities Fund)</a> program afterschool and also attending the <a href="http://www.urbanscholarsny.org/">Urban Scholars </a> Program for tutoring and sometimes summer programs. In addition, I do a lot of activities with my church such as praise dancing and singing with the choir and some volunteer work.</p>
 
  <p>I have a few favorites but not too many. My favorite food is macaroni and cheese, my favorite subject in school is English; my favorite color is purple; my favorite movies are My Sister's Keeper, Freedom writers, and The Great Gatsby; My favorite places are Disney World, Haiti, The Bahamas and France.</p>
@@ -16,25 +21,18 @@
   <p>My parents were born in Port-au-Prince, Haiti. My Father was raised partly in Haiti and partly in the Dominican republic; My mom was born and raised in Haiti and then she came to the USA. My parents speak Haitian, Creole, and French; my father also speaks Spanish. I speak Creole, English, and a little Spanish; I am also learning French at home. A fun fact about me is that I have a large family. They are spread across the world from D.R. and Haiti to Miami, Japan, China, France, etc.</p>
 
   <p>What most excites me about the Waves of Change internship program is the journalism because I love to write and it’s amazing how I will be able to inform others based on my writing. What wakes me up in the morning is God; my family and I are Christians and I think if I get to see another day I thank God. What motivates me is seeing how a lot of women have had to fight in history to get a word out to get a voice; In a way I think if they could do it why can’t I. What makes me proud of myself is when I accomplish things I never thought I could do: I don't only just do it, I do it with all my effort and it ends up being great which puts a smile on my face.</p>
+</div>
+</article>
 
 
-  <h3>connect</h3>
-  <ul>
-  <li>tumblr:wasveofchange.tumblr.com</li>
-  <li>twitter@waveschange</li>
-  </ul>
-</section>
-
-
-<aside>
-  <div>
-    <h2>Blog Posts by Nefy</h2>
+<aside class="post-article">
+  <div class="column">
+    <h1>Blog Posts by Nefy</h1>
     <ul>
       {% for post in site.posts %}
         {% if post.author == "Nafretiry Philippe" %}
           <li>
             <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p><span class="date">{{ post.date | date_to_string }}</span></p>
             <p>{{ post.teaser }}</p>
           </li>
         {% endif %}
@@ -42,8 +40,8 @@
     </ul>
   </div>
 
-  <div>
-    <h2>Projects by Nefy</h2>
+  <div class="column">
+    <h1>Projects by Nefy</h1>
     <ul>
         <li>
           <h3><a href="/projects/project-yeah.html">Project Yeah</a></h3>

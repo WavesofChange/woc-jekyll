@@ -1,0 +1,114 @@
+.site-navigation {
+  background-color: #a54f57;
+  @include margin-trailer(2);
+}
+
+.main-nav {
+  position: absolute;
+  top: 53px;
+  right: 0;
+  left: 0;
+  z-index: 1000; /* the nav sits behind the menu button */
+  text-align: center;
+  a {
+    overflow: hidden;
+    height: 0;
+    line-height: 0;
+    display: block;
+    font-size: 16px;
+    font-family: 'Dosis';
+    text-align: center;
+    background-color: #a54f57;
+    border-bottom: 1px solid #c66169;
+    color: #fff;
+    &:hover {
+      background-color: #c66169;
+      color: #fff;
+      opacity: 1;
+    }
+    &:visited {
+      color: #fff;
+    }
+  }
+}
+
+
+#nav:target {
+  z-index: 1001;  /* unless it's showing */
+}
+
+.main-nav:target a {
+  border-bottom-width: 1px;
+  line-height: 3em;
+  height: 3em;
+  position: relative;
+  z-index: 1;  /* make nav links sit up a level */
+
+  -moz-transition: height .25s, line-height .25s;
+  -ms-transition: height .25s, line-height .25s;
+  -o-transition: height .25s, line-height .25s;
+  -webkit-transition: height .25s, line-height .25s;
+  transition: height .25s, line-height .25s;
+
+}
+
+#skip-to-nav {
+  background: #fff url(/images/nav.png) 50% 50% no-repeat;
+  border: 1px solid #b8b8b8;
+  border-width: 0 0 1px 1px;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  height: 53px;
+  width: 53px;
+  text-indent: -999em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1001; /* make sure the menu button is on top */
+}
+
+#back {
+  /* turn the link into a ghost */
+  background: transparent;
+  border: 0;
+  text-indent: -999em;
+  position: absolute;
+  top: -53px;
+  right: 0;
+  z-index: 10002;
+  height: 53px;
+  width: 53px;
+}
+
+@media (min-width: 511px){
+  .main-nav {
+    position: relative;
+    top: 0;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+    line-height: 19.416px;
+    color: #000;
+    padding: 10px;
+    background-color: #a54f57;
+    border-right: 1px solid #c66169;
+    height: auto;
+  }
+
+  .main-nav a:hover {
+    background-color: #c66169;
+    color: #fff;
+  }
+
+  #skip-to-nav {
+    background: none;
+    border: none;
+  }
+
+}

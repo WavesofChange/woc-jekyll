@@ -4,6 +4,60 @@
   class: mentors
 ---
 
-<h1>Mentors</h1>
+<header>
+  <h1>Mentors</h1>
+  <p>We invited leaders from the local Halem Community, web developers, and entrepreneurs to lead workshops or talks. Some mentors joined us at the Hotel Theresa and others joined us remotely via GoogleHangout</p>
+</header>
 
-<p>Add blog posts of mentors here</p>
+<section class="teaser">
+  <h1>Netia McCray</h1>
+  <h2>A fearless entrprenerur</h2>
+  <p>I first met Netia in San Francisco. She was speaking at the Lean Conference and she caught my attention. Her work was similar to teaching I'd done in the Dominican Republic; she attended my once dream university; and she was one few women and women of color.</p>
+  <p>I tweeted at her. We met for a drink. And we've kept in touch. I was thrilled when she agreed to speak to our Wave of Change interns on her path as a black, female entrepreneur.</p>
+  <p class="author">- Claudina Sarahe</p>
+</section>
+
+<section class="teaser">
+  <h1>Rushaine McBean</h1>
+
+  {% for post in site.posts %}
+  {% if post.categories contains "rushaine" %}
+    {% include post-teaser.html %}
+  {% endif %}
+  {% endfor %}
+
+</section>
+
+
+<section class="teaser">
+  <h1>Dr. SClaudina Vargas</h1>
+
+  {% for post in site.posts %}
+  {% if post.categories contains "vargas" %}
+    {% include post-teaser.html %}
+  {% endif %}
+  {% endfor %}
+
+</section>
+
+<section class="teaser">
+  <h1>Dr. Vicky Gholson and Dr. DeeDee Halleck</h1>
+
+  {% for post in site.posts %}
+  {% if post.categories == "gholson"%}
+    {% include post-teaser.html %}
+  {% endif %}
+  {% endfor %}
+
+</section>
+
+<section class="teaser">
+  <h1>Marina Ortiz</h1>
+
+  {% for post in site.posts %}
+  {% if post.categories contains "marina" %}
+    {% include post-teaser.html %}
+  {% endif %}
+  {% endfor %}
+
+</section>

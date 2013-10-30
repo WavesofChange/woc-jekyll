@@ -1,0 +1,10 @@
+  <article>
+    <a href="{{ post.url }}">
+      <div class="description">
+        <h4 class="title">{{ post.title }}</h4>
+        <p class="byline"><span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        </p>
+        <p>{{ post.teaser }}</p>
+      </div>
+    </a>
+  </article>

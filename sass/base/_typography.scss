@@ -2,20 +2,24 @@
 
 // Modular Scale Defaults
 
-$ratio: major-third() fifth();
-$base-size: 16px;
+$ratio: golden();
+$base-size: 14px;
 $round-pixels: true;
 
 // ---------------------------------------------------------------------------
 // Size Settings
 
 $font-size-base: $base-size;
-$font-size-med: ms(1);
-$font-size-small: ms(-1);
-$font-size-xsmall: ms(-2);
-$font-size-xxsmall: ms(-3);
-$font-size-xxxsmall: ms(-4);
-$font-size-large: ms(4);
-$font-size-xlarge: ms(6);
-$font-size-xxlarge: ms(12);
-$font-size-xxxlarge: ms(16);
+$font-size-medium: ms(1);
+$font-size-small: ms(0.5);
+$font-size-xsmall: ms(0);
+$font-size-xxsmall: ms(-0.5);
+$font-size-xxxsmall: ms(-1);
+$font-size-large: ms(1.5);
+$font-size-xlarge: ms(2);
+$font-size-xxlarge: ms(2.5);
+$font-size-xxxlarge: ms(3);
+
+// Compass Vertical Rhythm
+
+$base-font-size: $base-size;

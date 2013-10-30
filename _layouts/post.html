@@ -1,32 +1,40 @@
 ---
 layout: default
+class: article-layout
 ---
 
-<section class="content">
+<article class="hentry article-full">
+  <header class="entry-header">
+    <figure class="media media-photo"><div class="media-wrapper">
+      <img src="{{ page.image }}">
+    </div></figure>
+    <h1 class="entry-title">{{ page.title }}</h1>
+    <p class="entry-details">
+      <span class="author">by <a class="author" href="/about/{{ page.author | downcase | split: ' ' | first }}.html">{{ page.author }}</a></span> on
+      <span class="pubdate updated">{{ page.date | date_to_string }}</span>
+    </p>
+  </header>
 
-  <p class="meta">{{ page.date | date_to_string }}</p>
-  <p class="author">by <a href="/about/{{ page.author | downcase | split: ' ' | first }}.html">{{ page.author }}</a></p>
-
-  <div class="post">
+  <div class="main-content">
     {{ content }}
   </div>
 
-</section>
+</article>
 
-<aside>
-  <div>
-    <h2>More Posts by {{ page.author }}</h2>
+<aside class="post-article">
+  <div class="more-articles-by-author">
+    <h1>More Posts by <span class="author"><a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ page.author }}</a></h1>
     <ul>
-      {% for post in site.posts %}
-        {% if post.author == page.author %}
-          <li>
-            <img src="{{ post.image }}" width="110px" height="110px">
-            <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p><span class="date">{{ post.date | date_to_string }}</span></p>
-            <p>{{ post.teaser }}</p>
-          </li>
-      {% endif %}
-      {% endfor %}
+    {% for post in site.posts %}
+      {% if post.author == page.author %}
+      <li>
+        <article class="hentry article-summary">
+          <h3 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="main-content">{{ post.teaser }}</p>
+        </article>
+      </li>
+    {% endif %}
+    {% endfor %}
     </ul>
   </div>
 </aside>

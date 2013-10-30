@@ -1,0 +1,21 @@
+.journalist-item {
+  clear: both;
+  overflow: auto;
+  margin-top: 21px;
+}
+
+.journalist-item img {
+  max-width: 82px;
+  max-height: 82px;
+  overflow: hidden;
+  float: left;
+  margin-right: 21px;
+}
+
+.journalist-item h4 {
+  font-size: 16px;
+}
+
+.role {
+  font-size: 13px;
+}

@@ -1,0 +1,15 @@
+  <article>
+    <a href="{{ post.url }}">
+      <figure class="media media-photo"><div class="media-wrapper">
+        <img src="{{ post.image }}">
+      </div></figure>
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+        <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+        </p>
+        <p>{{ post.teaser }}</p>
+      </div>
+    </a>
+  </article>

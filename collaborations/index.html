@@ -1,0 +1,81 @@
+---
+  layout: default
+  title: Waves of Change
+  class: collaborations
+---
+
+<header>
+  <h1>Collaborations</h1>
+  <p>Throughout the summer, Waves of Change Interns collaborated with various West Harlem Organizations. The focus of the project was to create and support. We focused on work with other organizations that had received funding through WHDC.</p>
+</header>
+
+<section class="teaser singleton-with-media">
+
+  <div class="main">
+    <header class="teaser-content">
+      <h1>
+        <a href="/projects/def-dance-jam.html" title="Def Dance Jams">Def Dance Jams</a>
+      </h1>
+      <p>Founded 20 years ago by Sister Aziza, Def Dance Jams provides community members with mixed abilities the environment for creative expression through dance, movement, and sign language.</p>
+    </header>
+
+    <figure class="media media-video"><div class="media-wrapper">
+      <img src="/images/def-dance-jams/group-after-dance-class.jpg">
+    </div></figure>
+
+  </div>
+
+  <figure class="media media-video">
+    {% include video-def-dance-jams.html %}
+    <figcaption>Our collaborative piece</figcaption>
+  </figure>
+
+  <figure class="media media-photo"><div class="media-wrapper">
+      <img src="/images/def-dance-jams/team-with-aziza.jpg">
+  </div></figure>
+
+</section>
+
+
+<section class="teaser singleton-with-text">
+
+  <header class="teaser-content">
+    <h1><a href="/projects/project-yeah.html" title="Project YEAH">Project YEAH</a></h1>
+    <h2>Young Empowered Artists for Harlem</h2>
+    <p>Non profit arts initiative founded by Roy Secord</p>
+  </header>
+
+  {% include video-project-yeah.html %}
+
+</section>
+
+<section class="teaser diptych">
+  <div class="column">
+    <header class="teaser-content">
+      <h1>Melvin McCray Video Production</h1>
+<!--       <p>Melvin received a grant to work with young women on History of Harlem. Our interns visited Melvin to learn about his past with ABC and his students tooks beautiful professional journalism photos of all our team!</p> -->
+      <figure class="media media-photo"><div class="media-wrapper">
+          <img src="/images/mi/team-with-aziza.jpg">
+      </div></figure>
+    </header>
+  </div>
+  <div class="column">
+    {% for post in site.posts %}
+    {% if post.categories contains "mist" %}
+      {% include post-teaser.html %}
+    {% endif %}
+    {% endfor %}
+  </div>
+
+</section>
+
+<!-- <section class="teaser singleton-with-text">
+   <header class="teaser-content">
+    <h1><a href="/projects/we-act.html" title="We ACT">We ACT for Environment Justice</a></h1>
+    <p>Are you a victim of environmental injustice? We Act is here for you.</p>
+  </header>
+  <figure class="media media-photo"><div class="media-wrapper">
+    <img src="/images/blog/we-act.JPG">
+  </div></figure>
+</section> -->
+

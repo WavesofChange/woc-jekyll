@@ -2,9 +2,11 @@
 layout: styleguide
 ---
 
-<h1 class = "text-center">HTML STYLEGUIDE</h1>
+<header>
+  <h1>Styleguide</h1>
+  <p>A compendium of our site building blocks and HTML helpers.</p>
+</header>
 
-<h1>TAGS</h1>
 
 <h1>This is an h1 tag.</h1>
 
@@ -17,6 +19,102 @@ layout: styleguide
 <h5>This is an h5 tag.</h5>
 
 <h6>This is an h6 tag.</h6>
+
+<hr>
+
+<h2>Teasers</h2>
+
+<p>Teasers are content previews. The inside content is arranged in a series of configurations, or clusters, controlled though CSS.</p>
+
+<h3>Single</h3>
+
+<code>.singleton</code>
+
+  <section class="teaser singleton-with-text">
+
+    <header class="teaser-content">
+      <h1>Long Bold Title to callout Single node</h1>
+      <p>Descriptive text if necessary</p>
+    </header>
+
+    {% include video-project-yeah.html %}
+
+  </section>
+
+  <section class="teaser singleton-with-media">
+
+    <div class="main">
+      {% include video-project-yeah.html %}
+
+      <header class="teaser-content">
+        <h1>Long Bold Title to callout Single node</h1>
+        <p>Descriptive text if necessary</p>
+      </header>
+
+    </div>
+
+    {% include fpo-media-photo.html %}
+
+    {% include fpo-media-photo.html %}
+
+  </section>
+
+<h3>Triptych</h3>
+
+  <section class="teaser triptych-with-text">
+    <header class="teaser-content">
+      <h1>Title to callout content</h1>
+      <h2>Subheading</h2>
+      <p>Descriptive text if necessary</p>
+    </header>
+
+    {% include fpo-media-photo.html %}
+    {% include fpo-media-photo.html %}
+    {% include fpo-media-photo.html %}
+
+  </section>
+
+<h3>Heptagon</h3>
+<p>For displaying seven objects.</p>
+
+  <section class="teaser heptagon-with-objects">
+
+    <header class="teaser-content">
+      <h1>Title to callout content</h1>
+      <h2>Subheading</h2>
+      <p>Descriptive text if necessary</p>
+    </header>
+
+    <div class="main">
+      {% include fpo-media-photo.html %}
+    </div>
+
+    <aside>
+      {% include fpo-media-photo.html %}
+      {% include fpo-media-photo.html %}
+      {% include fpo-media-photo.html %}
+      {% include fpo-media-photo.html %}
+      {% include fpo-media-photo.html %}
+      {% include fpo-media-photo.html %}
+    </aside>
+
+  </section>
+
+
+<hr>
+
+<h2>Articles</h2>
+<p>Any node is an article content page. These pages are expressed with the following code structure:</p>
+
+<code>
+  <header>
+    <h1></h1>
+    <p></p>
+  </header>
+  <article></article>
+</code>
+
+<hr>
 
 <p>The <strong>strong tag</strong> makes text bold.</p>
 
@@ -33,7 +131,7 @@ layout: styleguide
 <p>This is an image with an internal link. The image is located in a local directory:</p>
 <img src="../images/flickr-small.jpg" width="100px">
 
-<p>This is an image with an external link. The image is located somewhere on the web: </p> 
+<p>This is an image with an external link. The image is located somewhere on the web: </p>
 <img src="http://www.jiscdigitalmedia.ac.uk/images/flickr-words.jpg" width="100px">
 
 <p>This is an external link. It points to a website: <a href="http://www.surprise.com">Mystery Webite.</a></p>
@@ -64,7 +162,7 @@ layout: styleguide
 
 <a href="https://maps.google.com/maps?q=2090+Adam+Clayton+Powell+Jr+Blvd,+New+York,+NY&hl=en&ll=40.809051,-73.944941&spn=0.009534,0.022337&sll=40.808645,-73.955541&sspn=0.019067,0.061026&oq=2090+&hnear=2090+Adam+Clayton+Powell+Jr+Blvd,+New+York,+10027&t=m&z=16">
 	Theresa Hotel
-</a>	
+</a>
 
 <p>You can link with the short URL as well:</p>
 <a href="http://goo.gl/maps/vUBgn">Theresa Hotel Short Url</a>

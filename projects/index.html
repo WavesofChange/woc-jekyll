@@ -5,30 +5,74 @@
 ---
 
 <header>
-  <h1>Collaborations</h1>
-  <p>Throughout the summer, Waves of Change Interns collaborated with various West Harlem Organizations. The focus of the project was to create and support. We focused on work with other organizations that had received funding through WHDC.</p>
+  <h1>Projects &amp; Workshops</h1>
+  <p>Hands on activities and projects we completed throughout the 6-week.</p>
 </header>
 
-<section>
-  <h1>Def Dance Jams</h1>
-  <blockquote>
-    <p>I really enjoyed meeting and working with Sister Aziza</p>
-  </blockquote>
-  {% include projects/def-dance-jams.html %}
+<section class="teaser quartet-with-objects">
+  <header class="teaser-content">
+    <h1>Learning to Code</h1>
+    <h2>Waves of Change Intern Site</h2>
+    <p>We learned how to code, wrote blog entries, and documented our entire summer through a site that we built. We learned about the principles of design as well as basics of HTML.</p>
+  </header>
+
+  {% for post in site.posts %}
+  {% if post.categories contains "learning to code" %}
+    {% include post-teaser.html %}
+  {% endif %}
+  {% endfor %}
+
 </section>
 
-<section>
-  <h1>Project YEAH</h1>
-  <blockquote>
-    <p>I really enjoyed workign with Project YEAH. Their work was very inspirational.</p>
-  </blockquote>
-  {% include projects/project-yeah.html %}
+<section class="teaser heptagon-with-featured">
+  <header>
+    <h1>Ladybots</h1>
+    <h2>A fun way to learn about important historical women</h2>
+  </header>
+
+  {% for post in site.posts reversed%}
+  {% if post.categories contains "ladybots" %}
+    <figure class="media media-photo"><div class="media-wrapper">
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <img src="{{ post.image }}">
+      </a>
+    </div></figure>
+  {% endif %}
+  {% endfor %}
 </section>
 
-<section>
-  <h1>We ACT</h1>
-  <blockquote>
-    <p>We ACT helped me and is a valuable resource to the community</p>
-  </blockquote>
-  {% include projects/we-act.html %}
+<section class="teaser diptych">
+  <div class="column"
+    <header>
+      <h1>Current Events</h1>
+      <h2>Snowden &amp; Manning</h2>
+    </header>
+
+    <figure class="media media-photo"><div class="media-wrapper">
+      <img src="/images/blog/manning-snowden-diptych.jpg" alt="Chelsea Manning and Edward Snowden portraits">
+    </div></figure>
+
+    <p>A paragraph explaining the value and relevancy of this project</p>
+
+  </div>
+  <div class="column">
+    {% for post in site.posts reversed %}
+    {% if post.categories contains "snowden and manning" %}
+      <article id="{{ post.author | downcase | split: ' ' | first }}" class="post">
+        <h3 class="title">
+          <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </h3>
+        <p class="byline">
+          <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        </p>
+        <p class="post-teaser">{{ post.teaser }}</p>
+      </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="teaser">
+  <h1>Deep Dish Waves of Change Map Upgrade</h1>
+  <p>Upgraded the old Waves of Change site. We moved all our content over from proprietary Google Maps. We tagged all content. The new map allows users to filter by topics and is a first step to building a better, global community media resource</p>
 </section>

@@ -14,9 +14,11 @@ $cs-scheme            : tetrad;   // mono, complement, triad, tetrad, analogic, 
 // $cs-color-model       : rgb !default;    // rgb, ryb
 // $cs-colorblind        : normal !default;
 
-$primary: cs-primary();
-$secondary: cs-secondary(); // too light, darkening this up a bit.
-$tertiary: cs-tertiary();
-$quadrary: cs-quadrary();
+$primary-color: cs-primary();
+$secondary-color: cs-secondary(); // too light, darkening this up a bit.
+$tertiary-color: cs-tertiary();
+$quadrary-color: cs-quadrary();
 
-@include cs-test($primary $secondary $tertiary $quadrary);
+$background: #fff;
+$foreground: darken($secondary-color, 50)
+

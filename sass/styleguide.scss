@@ -1,0 +1,57 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+@import "modules";
+
+// Color Scheme
+@include cs-test($primary-color $secondary-color $tertiary-color $quadrary-color);
+
+/* Typography */
+@include ms-list-output(-7, 20, $base-size, $ratio);
+
+
+/*****************************************************************************/
+/*
+/* Basic Styles
+/*
+/*****************************************************************************/
+
+.photo-left {
+  float: left;
+  padding: 0px 10px;
+}
+
+.photo-right {
+  float: right;
+  padding: 0px 10px;
+}
+
+.photo-center {
+ display: block;
+ margin: 0 auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}

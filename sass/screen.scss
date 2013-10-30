@@ -5,3 +5,24 @@
 @import "modules";
 
 
+// ---------------------------------------------------------------------------
+// Root
+
+@include establish-baseline;
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  background: url(/images/starbackground.jpg) repeat;
+  color: $foreground;
+}
+
+p {
+  margin: 1em 0;
+  @include adjust-font-size-to($font-size-small);
+}
+
+a         { color: #7f0e17; text-decoration: none; }
+a:hover   { color:  #ed7d86;}
+a:visited { color: #a54f57; }

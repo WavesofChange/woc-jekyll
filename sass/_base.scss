@@ -7,11 +7,14 @@
 @import "modular-scale";
 // @import "breakpoint";
 
+@import "compass/reset";
+
 // ---------------------------------------------------------------------------
 // Modules
 
 @import 'toolkit/border-box';
 @import 'toolkit/fluid-media';
+@import 'toolkit/clearfix';
 
 ////////////////////////
 // Fluid Embeds and whatever WITH NO JAVASCIPT!
@@ -27,3 +30,13 @@
 @import "base/colors";
 @import "base/typography";
 
+// ---------------------------------------------------------------------------
+// Config
+
+// Browser Support
+// http://compass-style.org/reference/compass/support/
+$legacy-support-for-ie: false;
+$legacy-support-for-ie8: true;
+$experimental-support-for-svg: true;
+$experimental-support-for-pie: true;
+$legacy-support-for-mozilla: false;

@@ -6,14 +6,13 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
+    <!-- Custom CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/css/flexslider.css">
     <link rel="stylesheet" type="text/css" href="/css/screen.css">
 
 
@@ -27,25 +26,16 @@
 
   <body class="{{ page.class }}">
 
-    <div class="body-container">
-
       <nav class="site-navigation" role="navigation">
         <ul id="nav" class="main-nav" tabindex="0">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/projects/index.html">Collaborations</a></li>
+          <li><a id="home" href="/index.html">{{ site.name }}</a></li>
+          <li><a href="/collaborations/index.html">Collaborations</a></li>
+          <li><a href="/projects/index.html">Projects</a></li>
           <li><a href="/history/index.html">Harlem History</a></li>
           <li><a href="/mentors">Mentors</a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
           <li><a href="/about/index.html">About Us</a></li>
         </ul>
       </nav>
-
-      <header class="header" role="banner">
-        <h1><a href="/index.html">{{ site.name }}</a></h1>
-        <h2>Summer 2013</h2>
-      </header>
-
-      <a id="skip-to-nav" href="#nav">Skip to Site Navigation</a>
 
 
       <div class="container">
@@ -54,17 +44,10 @@
         </main>
       </div>
 
-    <!--
-      <footer>
-        Footer Information here
-      </footer>
-    -->
-    </div>
 
-    <!-- FlexSlider -->
-    <script src="/js/masonry.pkgd.min.js"></script>
-    <script defer src="/js/jquery.flexslider.js"></script>
-    <script defer src="/js/scripts.js"></script>
-    <script defer src="/js/turn.js"></script>
+      <footer role="contentinfo">
+        <p class="copyright">Deep Dish Waves of Change Harlem 2013 Intern Site is published under Creative Commons Share-and-Share alike.</p>
+      </footer>
+
   </body>
 </html>

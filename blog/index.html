@@ -19,7 +19,7 @@
         <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
         <span class="date">{{ post.date | date_to_string }}</span>
       </p>
-      <p class="teaser">{{ post.teaser }}</p>
+      <p>{{ post.teaser }}</p>
     </div>
   </div>
   {% endfor %}

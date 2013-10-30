@@ -2,11 +2,21 @@
   layout: default
   title: Waves of Change
   author: Melissa Hernandez
+  class: article-layout
 ---
 
-<section class="content">
-	 <h1>Melissa Hernandez</h1>
-	<img src="/images/about/melee.jpg" width="100px">
+<article class="bio-full">
+  <header class="entry-header">
+    <figure class="media media-photo"><div class="media-wrapper">
+      <img src="/images/about/melee.jpg">
+	 </div></figure>
+
+   <h1>Melissa Hernandez</h1>
+
+  </header>
+
+<div class="main-content">
+
 	<p>Here goes,</p>
 
 	<p>I'm Dominican-American, but I am also many things. I’m a writer (couldn’t do much with feelings if I
@@ -36,24 +46,17 @@
 	<p>See ya on the flipside,</p>
 
 	<p>Melissa</p>
+  </div>
+</article>
 
-
-	<h3>Connect</h3>
-	<ul>
-	<LI>Tumblr: waveschange.tumblr.com</LI>
-	<LI>Twitter: @waveschange</LI>
-	</ul>
-</section>
-
-<aside>
-	<div>
-		<h2>Blog Posts by Melissa</h2>
+<aside class="post-article">
+	<div class="column">
+		<h1>Blog Posts by Melissa</h1>
 		<ul>
 		  {% for post in site.posts %}
 		  	{% if post.author == "Melissa Hernandez" %}
 			    <li>
 			      <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p><span class="date">{{ post.date | date_to_string }}</span></p>
             <p>{{ post.teaser }}</p>
 			    </li>
 			{% endif %}
@@ -61,8 +64,8 @@
 		</ul>
 	</div>
 
-	<div>
-		<h2>Projects by Melissa</h2>
+	<div class="column">
+		<h1>Projects by Melissa</h1>
 
 		<ul>
         	<li>

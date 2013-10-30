@@ -2,28 +2,30 @@
   layout: default
   title: Waves of Change
   author: Raliat Akesode
+  class: article-layout
 ---
 
-<section class="content">
-  <h1>Raliat Akesode</h1>
+<article class="bio-full">
+  <header class="entry-header">
+    <figure class="media media-photo"><div class="media-wrapper">
+      <img src="/images/about/raliat.jpeg" width="300px">
+    </div></figure>
+    <h1>Raliat Akesode</h1>
+  </header>
 
-  <img src="/images/about/raliat.jpeg" width="300px">
-
+  <div class="main-content">
   <p>Hello, my name is Raliat Akesode. I currently attend <a href="http://www.mcsm.net"> Manhattan Center for Science & Mathematics</a> and will be in 11th grade when school resumes. Some things I enjoy doing are socializing, reading, going out, and hanging out with friends. Both of my parents were born in <a href="http://goo.gl/maps/4tCX9"> Nigeria</a> and I was born in America making me African-American.</p>
 
   <p>My short term goals are to improve myself academically and strive for a higher GPA when school begins. My long term goal is to become successful. I have hopes of becoming a neonatal nurse or a midwife. My aspirations are to excel and become something great in life.</p>
 
   <p>A few interesting facts about me are that I have a twin brother, and an older brother and sister. My favorite books are Of Mice and Men, Fahrenheit 451, and The Boy in the Striped Pajamas. My favorite subjects are English and Math and I have a strong interest in art.</p>
+  </div>
 
-  <h3>connect</h3>
-  <ul>
-  <li>Twitter:@_RALIAT_</li>
-  </ul>
-</section>
+</article>
 
-<aside>
-  <div>
-    <h2>Blog Posts by Raliat</h2>
+<aside class="post-article">
+  <div class="column">
+    <h1>Blog Posts by Raliat</h1>
     <ul>
       {% for post in site.posts %}
         {% if post.author == "Raliat Akesode" %}
@@ -37,8 +39,8 @@
     </ul>
   </div>
 
-  <div>
-    <h2>Projects by Raliat</h2>
+  <div class="column">
+    <h1>Projects by Raliat</h1>
     <ul>
       <li>
             <h3><a href="/projects/project-yeah.html">Project Yeah</a></h3>
