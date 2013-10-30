@@ -5,8 +5,156 @@
 
 <h1>Blog Posts</h1>
 
+<h1>Ladybots</h1>
+
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.categories.ladybot %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<h1>Collaborations</h1>
+
+<div class="posts">
+  {% for post in site.categories.collaborations %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<h1>Mentors</h1>
+
+<div class="posts">
+  {% for post in site.categories.mentors %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% for post in site.categories.mentors-marina %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% for post in site.categories.mentors-netia %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% for post in site.categories.mentors-rushaine %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<h1>Summer News</h1>
+
+<div class="posts">
+  {% for post in site.categories.internet %}
+  <div class="blogs">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}">
+      <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+      </div>
+    </a>
+    <div class="description">
+      <p>
+        <span class="author">by <a href="/about/{{ post.author | downcase | split: ' ' | first }}.html">{{ post.author }}</a></span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <p class="teaser">{{ post.teaser }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<h1>Web Design</h1>
+
+<div class="posts">
+  {% for post in site.categories.news %}
   <div class="blogs">
     <a href="{{ post.url }}">
       <img src="{{ post.image }}">
